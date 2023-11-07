@@ -1,0 +1,452 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Generales */
+@font-face {
+    font-family: "BeautyDemo";
+    src: url(../font/BeautyDemo.ttf);
+}
+
+body{
+    width: 100%;
+    font-family: 'Times New Roman';
+    background-color: rgb(196, 255, 236);
+	overflow-x: hidden;
+}
+
+h1{
+    font-family: "BeautyDemo";
+    font-size: 5rem;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+/* cabecera*/
+.logo{
+    width: 100vw;
+    align-items: center;
+}
+
+header{
+    position: relative;
+    align-items: center;
+    position: sticky;
+    top: 0vh;
+    z-index: 10;
+}
+
+/* Navegacion Escritorio */
+.navegacion{
+    
+    width: 100%;
+    display: inline-flex;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    border-radius: 2rem;
+}
+.nav-botones{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    font-size: 150%;
+   
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: space-a;
+}
+/* Pseudo clase */
+.nav-botones :hover{
+    background-color: rgb(188, 188, 188); 
+    border-radius: 0.5rem;   
+}
+.nav-botones :active{
+    background-color: rgb(156, 156, 156);     
+}
+.nav-botones :active li{
+    background-color: beige;
+}
+
+
+/* Navegacion movil */
+#movil-menu, .navegacion label{
+    display: none;
+    flex-direction: row-reverse;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Paginas */
+.titulo{
+    text-align: center;
+    grid-area: titulo;
+}
+
+/* Footer */
+.footer{
+    width: 1200px;
+    background-color:bisque;
+    margin-top: 2%;
+    grid-area: footer;
+    
+}
+/* Index */
+/* Sobre mi */
+.sobre-mi{
+    width: 65vw;
+    height: 100%;
+    padding: 2%;
+    display: flexbox;
+    background-color: bisque;
+    justify-items: center;
+    grid-area: sobre-mi;
+    border-radius: 2rem;
+}
+
+.sobre-mi h2{
+    text-align: center;
+    display: block;
+}
+.sobre-mi div{
+    display: inline-flex;
+    align-items: center;
+}
+
+.sobre-mi div img{
+    width: 30%;
+    background-color: aqua;
+    border-radius: 2rem;
+}
+
+.sobre-mi div p{
+    padding: 1%;
+}
+
+/* Encuesta */
+.encuesta{
+    width: 25vw;
+    height: 80%;
+    margin: 7% 0% 7% 0%;
+    background-color: bisque;
+    border-radius: 2rem;
+    padding: 2%;
+    font-size: 1.5rem;
+    
+    grid-area: encuesta;
+}
+
+.encuesta h2{
+    margin-bottom: 5%;
+    text-align: center;
+    display: block;
+}
+
+.encuesta div{
+    display: flex;
+} 
+.encuesta div form{
+    display: inline-flex;
+    flex-direction: column;
+}
+/* pesudo clase */
+.encuesta div form p:hover{
+    font-size: 2rem;
+}
+/* Ultimas Publicaciones */
+.ult-publicaciones{
+    width: 92vw;
+    padding: 2%;
+    display: flexbox;
+    background-color: bisque;
+    border-radius: 2rem;
+    
+    grid-area: ult-publicaciones;
+}
+
+.ult-publicaciones h2{
+    text-align: center;
+    display: block;
+}
+
+
+.ult-publicaciones div{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    
+}
+.ult-publicaciones div img{
+    height: 40vh;
+    background-color: blue;
+    border-radius: 2rem;
+    justify-content: space-between;
+}
+
+/* Pseudo clase */
+.ult-publicaciones div img:hover{
+    margin: 2%;
+}
+
+
+
+
+
+/* Gillas */
+.seccion-grilla {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+/* inicio */
+
+.grid-inicio{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4rem repeat(2, 1fr) 200px;
+    
+    gap: 3%;
+    grid-template-areas: 
+    "titulo titulo"
+    "sobre-mi encuesta"
+    "ult-publicaciones ult-publicaciones"
+    "footer footer";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media 1024 */
+@media (max-width: 1024px){
+    body{
+        width: 100vw;
+        margin: 0%;
+    }
+    .titulo{
+    width: 100vw;
+    display: block;
+    text-align: center;   
+}
+    .encuesta{
+        width: 28vw;
+        height: auto;
+        margin: 0%;
+        font-size: 1.5rem;
+    }
+    .encuesta div{
+        justify-content: start;
+    }
+}
+
+/* media 600px */
+@media (max-width: 600px){
+    body{
+        width: 100vw;
+        margin: 0%;
+        
+        
+    }
+    /* Logo */
+    .logo img{
+        width: 100vw;
+    }
+    /* Footer */
+    .footer{
+        width: 100vw;
+    }
+    /* Menu movil */
+    .navegacion label{
+        display: block;
+        left: 90%;
+        font-size: 2rem;
+    }
+  
+    .nav-botones{
+        display: none;
+    }
+    .navegacion #check-menu:checked~.nav-botones{
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+
+    /* contenido pagina */
+    .titulo{
+        width: 100vw;
+        display: block;
+        text-align: center;   
+    }
+    
+    /* Index */
+    /* Sobre mi */
+    .sobre-mi{
+        width: 95vw;
+        display: flexbox;
+        padding: 2%;
+    }
+    .sobre-mi div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .sobre-mi div img{
+        width: 80%; 
+    }
+    .sobre-mi div p{
+        font-size: 1.2rem;
+    }
+
+    /* encuesta */
+    .encuesta{
+        width: 65vw;
+        height: auto;
+
+        margin: 0%;
+        font-size: 1.5rem;
+    }
+    .encuesta div{
+        justify-content: start;
+    }
+
+    /* Ultimas publicaciones */
+    .ult-publicaciones{
+        width: 95vw;
+    }
+
+
+
+    /* grillas */
+    /* Index */
+    .grid-inicio{
+        grid-template-columns: auto;
+        grid-template-rows: 4rem repeat(3, auto)10rem;
+        gap: 5%;
+        grid-template-areas: 
+        "titulo"
+        "sobre-mi"
+        "encuesta"
+        "ult-publicaciones"
+        "footer";
+    }
+}
+
+
+/* media 360px */
+@media (max-width: 360px){
+    body{
+        width: 100%;
+    }
+    /* Logo */
+    .logo img{
+        width: 100vw;
+    }
+    .footer{
+        width: 100vw;
+    }
+    /* Menu movil */
+    .navegacion label{
+        display: block;
+        font-size: 2rem;
+    }
+  
+    .nav-botones{
+        display: none;
+    }
+    .navegacion #check-menu:checked~.nav-botones{
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        border-bottom-right-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+    }
+    /* contenido pagina */
+    .titulo{
+        width: 100vw;
+       display: block;
+       text-align: center;   
+    }
+
+    /* Index */
+    /* Sobre mi */
+    .sobre-mi{
+        width: 90vw;
+        display: flexbox;
+    }
+    .sobre-mi h2{
+        display: block;
+    }
+    .sobre-mi div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .sobre-mi div img{
+        width: 80%;
+    }
+
+        /* encuesta */
+    .encuesta{
+        width: 90vw;
+        height: auto;
+        margin: 0%;
+        font-size: 1.5rem;
+    }
+    .encuesta div{
+        justify-content: start;
+    }
+
+        /* grillas */
+        /* Index */
+    .grid-inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4rem repeat(3, auto) 10rem;
+        gap: 5%;
+        grid-template-areas: 
+        "titulo"
+        "sobre-mi"
+        "encuesta"
+        "ult-publicaciones"
+        "footer";
+    }
+}
+
+
+
+

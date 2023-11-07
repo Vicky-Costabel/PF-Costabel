@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- mi estilo -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Freya Cleripson</title>
+    <link rel="shortcut icon" href="../img/mini-contacto.png" type="image/x-icon">
+</head>
+
+<body class="container">
+  <header>
+    <!-- Logo -->
+    <div>
+        <a href="./index.html">
+            <img src="../img/contactos.png" alt="logo" class="logo">
+        </a>
+    </div>
+    <!-- /logo -->
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
+        <div class="container-fluid navegacion">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                <div class=" navbar-nav nav-botones">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="../paginas/personajes.html">Personajes</a>
+                    <a class="nav-link" href="../paginas/otros.html">Otros Trabajos</a>
+                    <a class="nav-link" href="../paginas/torneo.html">Torneo de Leyendas</a>
+                    <a class="nav-link active" aria-current="page" href="../paginas/contacto.html">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /navegacion -->
+  </header>
+  <main class="container">
+    <!-- Titulo -->
+    <section>
+      <h1 class="contacto">Contacto</h1>
+    </section>
+    <!-- /Titulo -->
+    <!-- Puertas -->
+      <section >
+        <div class="row puertas-a">
+          <div class="col-4">
+            <a href="https://www.youtube.com/@freyacleripson8237" target="_blank">
+              <img src="../img/img-prueba.png" alt="" class="img-contacto">
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="https://www.discordapp.com/users/372849037885308931" target="_blank">
+              <img src="../img/img-prueba.png" alt="" class="img-contacto">    
+            </a> 
+          </div>
+          <div class="col-4 ">    
+            <a href="https://www.instagram.com/freya_cleripson/" target="_blank">
+              <img src="../img/img-prueba.png" alt="" class="img-contacto">
+            </a>
+          </div>
+        </div>
+        <div class="puertas-b">
+          <div >
+            <a href="https://www.youtube.com/@freyacleripson8237" target="_blank">
+              <img src="../img/img-prueba.png" alt="" class="img-contacto">
+            </a>
+          </div>
+          <div >
+            <a href="https://www.discordapp.com/users/372849037885308931" target="_blank">
+              <img src="../img/img-prueba.png" alt="" class="img-contacto">    
+            </a> 
+          </div>
+          <div >    
+            <a href="https://www.instagram.com/freya_cleripson/" target="_blank">
+              <img src="../img/img-prueba.png" alt="" class="img-contacto">
+            </a>
+          </div>
+        </div>
+        
+      </section>
+    <!-- /puertas -->
+    <!-- Formulario de Comisiones -->
+    <section class=" justify-content-center comisiones">
+      <form class="row formulario ">
+        <fieldset class="row mb-3 ">
+          <!-- Tipo de comision -->
+          <h3>Comisiones</h3>
+          <legend class=" col-form-label col-sm pt-0 ">Tipo de Comision</legend>
+          <div class="justify-content-center col-sm-10">
+            <div class="form-check opciones">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+              Personaje
+              </label>
+            </div>
+            <div class="form-check opciones">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+              Objeto
+              </label>
+            </div>
+            <div class="form-check opciones">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+              Animación
+              </label>
+            </div>
+          </div>
+          <!-- /Tipo de comision -->
+        </fieldset>
+        <!-- Email -->
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <!-- /Email -->
+        <!-- Imagenes de referencia -->
+        <div>
+          <label for="formFile" class="form-label ">Imagenes de referencias</label>
+          <input class="form-control" type="file" id="formFile">
+        </div>
+        <!-- /imagenes de referencia -->
+        <!-- Comentario -->
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+          <label for="floatingTextarea">Comentarios</label>
+        </div>
+        <!-- /comentario -->
+        <!-- Terminos y condiciones y boton -->
+        <div class="row mb-3 ">
+          <div class="offset-sm-2 col-sm-10 ">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+              Terminos y condiciones
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar </button>
+        <!-- /Terminos y Condiciones -->
+      </form>
+    </section>
+    <!-- /Formulario de Comisiones -->
+    </main>
+    
+<script src="../js/bootstrap.js"></script>
+<script src="../js/popper.js"></script>
+</body>
+</html>
