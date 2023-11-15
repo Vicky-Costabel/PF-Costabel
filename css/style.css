@@ -148,9 +148,6 @@ h1{
 }
 .nav-ver{
     display: none;
-    position: absolute;
-    left: 3px;
-   
 }
 .scroll{
     position: absolute;
@@ -158,33 +155,30 @@ h1{
 }
 /* Contenedor Personajes */
 .con-personajes{
-    font-size: 1.2rem;
-    position: relative;
-    background-color: rgba(240, 255, 255, 0.5);
-    
-    
+    padding: 2%;
 }
 .con-personajes h2{
     text-align: center;
     display: block;
     font-family: "photograph";
     font-size: 2.5rem;
-} 
+}
 .con-personajes div{
-    display: inline-block;
-    padding: 2%;
+    display: inline-flex;
 }
 .con-personajes img{
-    height: 100%;
-    width: 30%;
-    display: inline-flex;
+    width: 40%;
+    height: 50%;
     border-radius: 2rem;
 }
 .txt-personajes{
     display: block;
     flex-direction: column;
-
+    padding-left: 1%;
 }
+
+
+
 #charlie section{
     background-color: rgba(143, 37, 37, 0.5);
     border-radius: 1rem;
@@ -365,17 +359,27 @@ h1{
    }
 
    /* Personajes */
+   /* Navegacion */
    .nav-hor{
     display: none;
    }
    .nav-ver{
+    display: inline-flex;
+   }
+   /* Contenedor personajes */
+   .con-personajes{
+    width: 80vw;
     display: block;
    }
-   .con-personajes{
+   .con-personajes div{
     display: inline-block;
    }
+   .con-personajes img{
+    width: 80%;
+    
+   }
    #charlie img{
-    width: 100%;
+    width: 90%;
    }
    /* Contacto */
    /* Puertas */
