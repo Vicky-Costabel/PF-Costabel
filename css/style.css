@@ -98,6 +98,7 @@ h1{
 .encuesta{
     border-radius: 2rem;
     font-size: 1.5rem;
+    grid-area: encuesta;
 }
 .encuesta h2{
     text-align: center;
@@ -145,40 +146,45 @@ h1{
     padding: 0%;
     
 }
+.nav-ver{
+    display: none;
+}
+.scroll{
+    position: absolute;
+    overflow: scroll;
+}
 /* Contenedor Personajes */
 .con-personajes{
-    font-size: 1.2rem;
-    background-color: rgba(240, 255, 255, 0.5);
-    margin-left: 0vw;
-    width: 97vw;
+    padding: 2%;
 }
 .con-personajes h2{
     text-align: center;
     display: block;
     font-family: "photograph";
     font-size: 2.5rem;
-} 
-.con-personajes div section div{
+}
+.con-personajes div{
     display: inline-flex;
-    padding: 2%;
 }
 .con-personajes img{
-    height: 100%;
-    width: 30%;
-    display: inline-flex;
+    width: 40%;
+    height: 50%;
     border-radius: 2rem;
 }
 .txt-personajes{
     display: block;
     flex-direction: column;
-
+    padding-left: 1%;
 }
+
+
+
 #charlie section{
     background-color: rgba(143, 37, 37, 0.5);
     border-radius: 1rem;
 }
 #charlie img{
-    height: 100%;
+    height: 60%;
     width: 40%;
 }
 #daisy section{
@@ -337,7 +343,6 @@ h1{
     display: inline-block;
 }
 
-
 @media(max-width:768px){
     /* Index */
     /* Ultimas publicaciones */
@@ -353,15 +358,41 @@ h1{
     width: 100vw;
    }
 
+   /* Personajes */
+   /* Navegacion */
+   .nav-hor{
+    display: none;
+   }
+   .nav-ver{
+    display: inline-flex;
+   }
+   /* Contenedor personajes */
+   .con-personajes{
+    width: 80vw;
+    display: block;
+   }
+   .con-personajes div{
+    display: inline-block;
+   }
+   .con-personajes img{
+    width: 80%;
+    
+   }
+   #charlie img{
+    width: 90%;
+   }
    /* Contacto */
    /* Puertas */
    .puertas-a img{
     width: 100%;
-}
+    }
    /* formulario de comisiones */
    .formulario{
     width: 80%;
    }
+   /* grid */
+   /* personajes */
+   
 } 
 
 @media(max-width: 576px){
