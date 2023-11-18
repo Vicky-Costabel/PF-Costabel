@@ -1,0 +1,367 @@
+@import "./partials/fuentes";
+
+@import "./partials/queries";
+
+// Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+// generales
+body{
+    width: 100%;
+    overflow-x: hidden;
+
+    h1 {
+        font-family: "BeautyDemo";
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+// Navegacion
+.logo{
+    width: 70%
+}
+
+.navegacion{
+    border-radius: 2rem;
+
+    .nav-botones{
+        width: 100%; 
+        justify-content: space-around;
+        align-content:center; 
+        font-size: 150%;
+    }
+}
+// Footer
+.footer{
+    background-color: none;
+    height: 15vh;
+    width: 90vw;
+
+    li{
+        list-style: none;  
+    }
+
+    img{
+        width: 40%;
+    }
+}
+
+// Index
+// sobre mi
+.sobre-mi{
+    display: flexbox;
+    border-radius: 2rem;
+    justify-items: center;
+    grid-area: Sobre-mi;
+
+    h2{
+        text-align: center;
+        display: block;
+    }
+
+    div{
+        display: inline-flex;
+        align-items: center;
+        padding: 2%;
+
+        img{
+            width: 30%;
+            background-color: aqua;
+            border-radius: 2rem;
+        }
+        
+        p{
+            font-size: 1.3rem;
+            padding:2%;
+        }
+    }
+}
+
+// Encuesta
+.encuesta{
+    border-radius: 2rem;
+    font-size: 1rem;
+    grid-area: encuesta;
+
+    h2{
+        text-align: center;
+        display: block;
+    }
+    .enc-contenido{
+        display: inline-flex;
+        .enc-opciones{
+            display: inline-flex;
+            flex-direction: column;
+            form{
+                div{
+                    label:hover{
+                        font-size: 1.5rem;  
+                    }
+                }
+            }
+        }  
+    }
+}
+
+// Ultimas Publicaciones
+.ult-publicaciones{
+    height: 60%;
+    display: flexbox;
+    border-radius: 2rem;
+    grid-area: ult-publicaciones;
+
+    h2{
+        text-align: center;
+        display: block;
+    }
+    div{
+        img{
+            width: 20%;
+            height: 100%;
+            border-radius: 2rem;
+        }
+    }
+}
+
+// Personajes
+// navegacion personajes
+.nav-ver{
+    display: none;
+}
+// Contenedor personajes
+.con-personajes{
+    padding: 2%;
+    
+    h2{
+        text-align: center;
+        display: block;
+        font-family: "photograph";
+        font-size: 2.5rem;
+    }
+    div{
+        display: inline-flex;
+
+        img{
+            width: 40%;
+            height: 50%;
+            border-radius: 2rem;    
+        }
+        .txt-personajes{
+            display: block;
+            flex-direction: column;
+            padding: 1%;
+        }
+    }
+}
+
+.personajes{
+    #charlie{
+        background-color: rgba(143, 37, 37, 0.5);
+        border-radius: 1rem;
+        img{
+            height: 60%;
+            width: 40%;
+        }
+    }
+    #freya{
+        background-color: rgba(143, 106, 112, 0.5);
+        border-radius: 1rem;
+    } 
+    #hotaru{
+        background-color: rgba(127, 127, 127, 0.5);
+        border-radius: 1rem;
+    }
+    #ikko{
+        background-color: rgba(123, 123, 253, 0.5);
+        border-radius: 1rem;
+    }
+    #jo{
+        background-color: rgba(49, 49, 49, 0.5);
+        border-radius: 1rem;
+    }
+    #koi{
+        background-color: rgba(253, 123, 123, 0.5);
+        border-radius: 1rem;
+    }
+    #lilith{
+        background-color: rgba(155, 155, 155, 0.5);
+        border-radius: 1rem;
+    }
+    #mew{
+        background-color: rgba(44, 196, 72, 0.5);
+        border-radius: 1rem;
+    }
+    #neeko{
+        background-color: rgba(123, 253, 175, 0.5);
+        border-radius: 1rem;
+    }
+    #opal{
+        background-color: rgba(123, 179, 253, 0.5);
+        border-radius: 1rem;
+    }
+    #phoenix{
+        background-color: rgba(128, 17, 197, 0.5);
+        border-radius: 1rem;
+    }
+    #ri{
+        background-color: rgba(184, 184, 195, 0.5);
+        border-radius: 1rem;
+    }
+    #thea{
+        background-color: rgba(214, 114, 254, 0.5);
+        border-radius: 1rem;
+    }
+    #usagi{
+        background-color: rgba(114, 172, 254, 0.5);
+        border-radius: 1rem;
+    }
+    #vanelloppe{
+        background-color: rgba(254, 249, 114, 0.5);
+        border-radius: 1rem;
+    }
+    #zatch{
+        background-color: rgba(255, 152, 197, 0.5);
+        border-radius: 1rem;
+    }
+}
+
+// Otros trabajos
+
+
+// Torneo de Leyendas
+// Sipnosis
+.sipnosis{
+    img{
+        height: 50vh;
+        width: 85vw;
+        background-color: blueviolet;
+    }
+}
+
+// Entrenadores
+// Navegacion
+.nav-entrenadores{
+    width: 20vw;
+    height: 10vh;
+    background-color: aqua;
+}
+// Contenedor
+.con-entrenadores{
+    font-size: 1.2rem;
+    margin-left: 0vw;
+    width: 97vw;
+    div{
+        div{
+            h2{
+                text-align: center;
+                display: block;
+                font-family: "photograph";
+                font-size: 2.5rem; 
+            }      
+            
+            div{
+                display: inline-flex;
+                width: 80vw;
+
+                 img{
+                    display: inline-flex;
+                    border-radius: 2rem;
+                    width: 30vw;
+                    height: 80vh;
+                    background-color: aqua;
+                }
+                div{
+                    display: inline-flex;
+                    padding: 2%;
+        
+                    .txt-entrenadores{
+                        display: block; 
+                        padding: 1%;
+                        
+                    }
+                }
+            }  
+        }
+    }    
+}
+
+// Contacto
+// Puertas
+.puertas{
+    .puertas-a{
+        div{
+            a{
+                .img-contacto{
+                    width: 100%;
+                    background-color: aqua;
+                    border-radius: 2rem; 
+                 }
+            }
+            
+        }
+    }
+    .puertas-b{
+        display: none;
+
+        div{
+            a{
+                .img-contacto{
+                    height: 10rem;
+                    width: 90vw;
+                    background-color: aqua;
+                    display: none;
+                    margin-bottom: 3%;
+                    border-radius: 2rem;
+                }
+            }
+        }
+    }
+}
+
+// Formulario de Comisiones
+.formulario{
+    justify-content: center;
+    width: 50vw;
+    border-radius: 2rem;
+    margin: 3%;
+    padding: 2%;
+    font-size: 1rem;
+    
+    fieldset{
+        justify-content: center;
+        width: 20vw;
+        display: flex;
+        text-align: center;
+
+        h3{
+            text-align: center;
+        }
+
+        legend{
+            display: block;
+        }
+        div{
+            div{
+                .opciones{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    div{
+        #form-floating{
+            label{
+                margin:2%;
+            }
+        }
+    }
+}
+
+@import "./partials/queries";
