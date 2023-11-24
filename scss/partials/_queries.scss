@@ -1,17 +1,46 @@
 @media(max-width:768px){
-    /* Index */
-    /* Ultimas publicaciones */
-    .ultpub-enc{
-        flex-direction: column-reverse;
+    // Footer
+    .footer{
+        display: flex;
+        background-color: none;
+        margin: 30px;
+    
+        gap: 5%;
+        div{
+            display: inline-flex;
+            div{
+                .img-redes{
+                    div{
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-   .encuesta{
-    font-size: 1.2rem;
-    width: 100vw;
-    height: 40vh;
-   }
-   .ult-publicaciones{
-    width: 100vw;
-   }
+    // Index
+    // Sobre mi
+    .sobre-mi{
+        div{
+            display: block;
+            img{
+                width: 80%;
+            }
+        }
+    }
+    // Ultimas publicaicones encuesta
+    .ult-enc{
+        flex-direction: column-reverse;
+        .ult-publicaciones{
+         width: 100vw;
+        }
+    }
+
+    /* Ultimas publicaciones */
+   
 
    /* Personajes */
    /* Navegacion */
@@ -51,22 +80,20 @@
 } 
 
 @media(max-width: 576px){
+    // Index
+    // Ultimas publicaciones, encuesta
+
     /* Index */
-    /* Sobre mi */
-    .sobre-mi div{
-        display: inline;
-    }
-    .sobre-mi div img{
-        width: 90%;
-    }
-    /* Ultimas publicaciones */
-    .ultpub-enc{
-     flex-direction: column-reverse;
+    /* Ultimas publicaciones,*/
+    .ult-enc{
+        flex-direction: column-reverse;
+        
+        .ult-publicaciones{
+         width: 100vw;
+        }
     }
     /* encuesta */
-    .enc-contenido{
-        display: inline-block;
-    }
+   
     .puertas-a img{
         width: 80vw;
     }
@@ -80,12 +107,7 @@
 @media(max-width: 575px){
     /* Index */
     /* Encuesta */
-    .encuesta{
-        display: inline-block;
-        width: 100vw;
-        height: 60vh;
-    }
-
+   
      /* Contacto */
     /* Puertas */
     .puertas-a img{
