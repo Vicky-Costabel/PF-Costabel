@@ -1,3 +1,13 @@
+@media(max-width:1024px){
+    // Otros trabajos
+    .otros-trabajos{
+        .ot-galeria-img{
+            column-count: 3;
+        }
+    }
+}
+
+
 @media(max-width:768px){
     // Footer
     .footer{
@@ -22,49 +32,84 @@
         }
     }
     // Index
-    // Sobre mi
-    .sobre-mi{
-        div{
-            display: block;
-            img{
-                width: 80%;
+    // Sobre mi encuesta
+    .sob-enc{
+        .sobre-mi{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                img{
+                    width: 60%;
+                }
+            }
+            
+        }
+    }
+    // Ultimas publicaicones 
+    .ult{
+        .ult-pub-slider{
+            .ult-pub-galeria{
+                width: 100vw;
+                height: 50vh;
             }
         }
     }
-    // Ultimas publicaicones encuesta
-    .ult-enc{
-        flex-direction: column-reverse;
-        .ult-publicaciones{
-         width: 100vw;
+
+    // Pesonajes
+    .mis-personajes{
+        nav{
+            .nav-hor{
+                display: none;
+            }
+            div{
+                .nav-ver{
+                    display: inline-flex;
+                }
+                .personajes{
+                    display: block;
+                    div{
+                        section{
+                            div{
+                                .img-personajes{
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-
-    /* Ultimas publicaciones */
+    // Otros trabajos
+    .otros-trabajos{
+        .ot-galeria-img{
+            column-count: 2;
+        }
+    }
+}   
    
 
-   /* Personajes */
-   /* Navegacion */
-   .nav-hor{
-    display: none;
-   }
-   .nav-ver{
-    display: inline-flex;
-   }
-   /* Contenedor personajes */
-   .con-personajes{
-    width: 80vw;
-    display: block;
-   }
-   .con-personajes div{
-    display: inline-block;
-   }
-   .con-personajes img{
-    width: 80%;
+
+
+
+
+
+
+// Pc
+// Responsive
+ 
+   
+//    .con-personajes{
+//     
+//    .con-personajes div{
+//     display: inline-block;
+//    }
+//    .con-personajes img{
+//     width: 80%;
     
-   }
-   #charlie img{
-    width: 90%;
-   }
+
+   
    /* Contacto */
    /* Puertas */
    .puertas-a img{
@@ -77,24 +122,51 @@
    /* grid */
    /* personajes */
    
-} 
+ 
 
 @media(max-width: 576px){
     // Index
-    // Ultimas publicaciones, encuesta
-
-    /* Index */
-    /* Ultimas publicaciones,*/
-    .ult-enc{
-        flex-direction: column-reverse;
-        
-        .ult-publicaciones{
-         width: 100vw;
+    // Sobre Mi
+    .sob-enc{
+        .sobre-mi{
+            display: inline-block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div{
+                img{
+                    width: 90%;
+                }
+            }
+            
         }
     }
-    /* encuesta */
+
+    // Ultimas publicaciones
+    .ult{
+        .ult-pub-slider{
+            .ult-pub-galeria{
+                width: 120vw;
+                height: 60vh;
+            }
+        }
+    }
+
+    // Otros trabajos
+    .otros-trabajos{
+        .ot-galeria-img{
+            column-count: 1;
+        }
+    }
+
+
    
-    .puertas-a img{
+    
+    .puertas-b{
+        display: block;
+    }
+
+    .puertas-b img{
         width: 80vw;
     }
      /* Formulario de comisiones */
@@ -105,6 +177,46 @@
 }
 
 @media(max-width: 575px){
+    // Footer
+    .footer{
+        display: flex;
+        background-color: none;
+        margin: 0px;
+        div{
+            display: inline-flex;
+            div{
+                .img-redes{
+                    div{
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Index
+    // ultimas publicaciones
+    .ult{
+        .ult-pub-slider{
+            .ult-pub-galeria{
+                width: 100vw;
+                height: 100vh;
+                margin: 10% 0 0;
+                align-items: none;
+                justify-content: none;
+                .ult-pub-contenedor{
+                    justify-content: none;
+                    align-items: none;
+                    .ult-pub-con-img{
+                        right: 5%;
+                    }
+                }
+            }
+        }
+    }
     /* Index */
     /* Encuesta */
    

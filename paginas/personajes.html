@@ -7,40 +7,45 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- mi estilo -->
     <link rel="stylesheet" href="../css/style.css">
     <title>Personajes</title>
     <link rel="shortcut icon" href="../img/mini-personajes.png" type="image/x-icon">
 </head>
 
-<body >
-  <header class="container">
-    <!-- Logo -->
-    <div>
-      <a href="../index.html">
-        <img src="../img/personajes.png" alt="logo" class="logo">
-      </a>
-    </div>
-    <!-- /logo -->
-      <!-- Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
-      <div class="container-fluid navegacion">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
-          <div class=" navbar-nav nav-botones">
-            <a class="nav-link"  href="../index.html">Inicio</a>
-            <a class="nav-link active" aria-current="page" href="../paginas/personajes.html">Personajes</a>
-            <a class="nav-link" href="../paginas/otros.html">Otros Trabajos</a>
-            <a class="nav-link" href="../paginas/torneo.html">Torneo de Leyendas</a>
-            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-          </div>
+<body class="animate__animated animate__fadeIn">
+    <header class="container">
+        <!-- Logo -->
+        <div>
+            <a href="../index.html">
+                <img src="../img/personajes.png" alt="logo" class="logo">
+            </a>
         </div>
-      </div>
-    </nav>
-  </header>
-    <!-- /navegacion -->
+        <!-- /logo -->
+        <!-- Navegacion -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navegacion">
+            <div class="container-fluid navegacion">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+                    <div class=" navbar-nav nav-botones">
+                        <a class="nav-link"  href="../index.html">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="../paginas/personajes.html">Personajes</a>
+                        <a class="nav-link" href="../paginas/otros.html">Otros Trabajos</a>
+                        <a class="nav-link" href="../paginas/torneo.html">Torneo de Leyendas</a>
+                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- /navegacion -->
+    </header>
+
   <main class="container-fluid ">
   <!-- Titulo -->
     <div>
@@ -48,7 +53,7 @@
     </div>
   <!-- /Titulo -->
   <!-- Seccion personajes -->
-    <section>
+    <section class="mis-personajes">
       <!-- personajes -->
         <nav class="row">
             <!-- Navegacion Horizontal -->
@@ -108,7 +113,7 @@
             </div>
             <!-- /Navegacion Horizontal -->
             <!-- Navegacion Vertical, Contenedor personajes -->
-            <div class="d-flex align-items-start col-sm">
+            <div class="d-flex align-items-start col-sm"> 
                 <!-- Navegacion Vertical --> 
                 <div class="nav flex-column nav-pills me-3 nav-ver" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <!-- A -->
@@ -174,7 +179,7 @@
                             <section class="con-personajes">
                                 <h2>Charlie Mustang</h2>
                                 <div>
-                                    <img src="../img/charlie.png" alt="Charllotte Abigail Mustang">
+                                    <img src="../img/charlie.png" alt="Charllotte Abigail Mustang" class="img-personajes">
                                     <div class="txt-personajes">
                                         <strong>Nombre:</strong><p>Charlie Mustang.</p>
                                         <strong>Edad:</strong><p>2076 años.</p>
@@ -200,9 +205,9 @@
                                         <strong>Raza:</strong><p>Aasimar Azote</p>
                                         <strong>Clase:</strong><p>Paladin de la venganza/ barbaro zelote.</p>
                                         <strong>Sistema:</strong><p>DnD 5e</p>
-                                        <strong>Historia:</strong><p>Desde que tiene memoria, su deber era el proteger. Era el tanque, aquella que recibia los golpes y eso a ella le gustaba. Daba la vida por sus compañeros y por su hermana gemela Frigg.</p>
-                                        <p>Sin embargo, un dia en el que algo salio mal, aquellos a los que protegio con su vida. no dudaron en apuñalarla por la espalda para dejarla a servir como carnada.</p>
-                                        <p>Algo en ella murio ese dia, algo en ella se rompio, su calida y amable actitud paso a ser una seria, y fria como la hoja de su hacha. Ella va a vengarse de aquellos que alguna vez protegio, en esecial a aquella que tanto amo.</p>
+                                        <strong>Historia:</strong><p>Desde sus primeros recuerdos, su deber fue proteger. Como el tanque del grupo, era quien absorbía los golpes, y extrañamente eso le complacía. Estaba dispuesta a dar la vida por sus compañeros, especialmente por su hermana gemela, Frigg.</p>
+                                        <p>Sin embargo, un fatídico día, en un giro inesperado, aquellos a quienes protegió sin titubear la traicionaron, hiriéndola de manera vil para utilizarla como carnada. Algo esencial en ella se desvaneció en ese instante, algo se quebró irremediablemente; su cálida y gentil disposición se convirtió en una frialdad tan cortante como la hoja de su hacha.</p>
+                                        <p>Ahora, su única meta es la venganza contra aquellos a quienes una vez protegió con tanto fervor, sobre todo, contra aquella a quien amó con todo su ser.</p>
                                     </div>
                                 </div>
                             </section>
@@ -220,9 +225,8 @@
                                         <strong>Raza:</strong><p>Humana</p>
                                         <strong>Clase:</strong><p>Mago Acanthus.</p>
                                         <strong>Sistema:</strong><p>Mage, The Awakening</p>
-                                        <strong>Historia:</strong><p>Siempre supo que habia algo mal en ella. los ruidos le parecen muy molestos y muchas veces las personas hacen gestos o dicen cosas que le cuesta entender. Sabe que no es como los demas, pero tampoco desea serlo.</p>
-                                        <p>Los libros y el conocimiento siempre fueron su pasion. y luego de llamado "despertar" estos se volvieron su mejor herramienta.</p>
-                                        <p>En algun lugar se encuentra alguein del cual no recuerda su nombre, no recuerda su rostro ni recuerda que los une. Pero ella sabe que debe encontrarlo, ella sabe que el espera y por ese motivo debe buscar todo el poder que puede para poder salvarlo. o e cuyo caso, matarlo.</p>
+                                        <strong>Historia:</strong><p>Desde siempre supo que algo no estaba bien en ella. Los ruidos le resultaban molestos y a menudo las personas hacían gestos o decían cosas que le costaba entender. Era consciente de que no encajaba con los demás, pero tampoco ansiaba hacerlo. Los libros y el conocimiento siempre fueron su pasión, y después de lo que llamó un "despertar", se convirtieron en su mejor herramienta.</p>
+                                        <p>En algún lugar, alguien permanece en su memoria, aunque no recuerda ni su nombre ni su rostro, ni tampoco la razón que los une. Sin embargo, siente una imperiosa necesidad de encontrarlo, consciente de que él espera, y por ese motivo, está decidida a adquirir todo el poder posible para salvarlo, o en su defecto, para enfrentarlo y, de ser necesario, derrotarlo.</p>
                                     </div>
                                 </div>
                             </section>
@@ -239,10 +243,10 @@
                                         <strong>Raza:</strong><p>¿Humana?.</p>
                                         <strong>Sistema:</strong><p>DnD 5e</p>
                                         <strong>Clase:</strong><p>Ranger Fey wanderer/Bardo de los susurros.</p>
-                                        <strong>Historia:</strong><p>Un secreto a voces de la nobleza de Geishlich, es que la princesa. Hija del emperador, Luz del impero y salvador de la corrupcion. No dio vida a su hija sino que lo hizo un energia extraña originaria del Fey wild. La cual inpregno en ella ese raro y peculiar cabello blanco arcoiris y esos ojos multicolor que brillan como si todas las piedras preciosas se juntaran en un mismo lugar. Muchos atribuyen, tambien, que la peculiar habilidad de la princesa de causar el caos a su alrededor es producto de su meztizaje con el plano feerico</p>
-                                        <p>Este es el motivo por el que sus salidas del palacio eran contadas, los mejores soldados eran sus escoltas, y sus actividades era meticulozamente planificadas para no darle espacio a que su mente comience a divagar</p>
-                                        <p>Si bien, sus amorosos padres lo hicieron con las mejores de las intenciones, no era algo que a ella le gsutara. Su deseo era explorar el mundo, ser libre, salir de esa jaula de oro y volar como un ave libre. Sin embargo eso jamas ocurrio, planificaron un matrimonio con alguien que jamas vio y mucho menos amo.</p>
-                                        <p>Esa fue la gota que colmo el vaso, tomo sus miles de joyas que jamas gusto usar, desgarro los incomodos vestidos que le obligaron a portar y con esos se hizo con sus equipo. Escapando de su habitacion de lujos para alfin conseguir su sueño de ser libre.</p>
+                                        <strong>Historia:</strong><p>Un secreto ampliamente divulgado entre la nobleza de Geishlich es que la princesa, hija del emperador y considerada la luz del imperio y la salvadora de la corrupción, no fue quien dio vida a su hija, sino que esta fue concebida por una energía extraña originaria del Feywild. Esta enigmática fuerza impregnó en ella el raro y peculiar cabello blanco arcoíris y esos ojos multicolores que brillan como si todas las piedras preciosas se hubieran congregado en un único lugar. Muchos también atribuyen la peculiar habilidad de la princesa para causar caos a su alrededor al mestizaje con el plano feérico.</p>
+                                        <p>Este es el motivo por el cual sus salidas del palacio eran escasas, con los mejores soldados como sus escoltas y sus actividades meticulosamente planificadas para evitar que su mente divagara.</p>
+                                        <p>Aunque sus amorosos padres actuaron con las mejores intenciones, esta situación no era de su agrado. Anhelaba explorar el mundo, ser libre y escapar de esa jaula de oro para volar como un ave en libertad. Sin embargo, esto nunca ocurrió, ya que se planeó un matrimonio con alguien a quien ni siquiera vio, y mucho menos amó.</p>
+                                        <p>Fue la gota que colmó el vaso: tomó las miles de joyas que nunca le gustó usar, rasgó los incómodos vestidos que la obligaron a llevar y con ellos improvisó su equipo. Escapó de su lujosa habitación para finalmente alcanzar su ansiado sueño de libertad.</p>
                                     </div>
                                 </div>
                             </section>
@@ -424,7 +428,7 @@
                             <section class="con-personajes">
                                 <h2>Vanelloppe Monroe</h2>
                                 <div class="con-pers-con">
-                                    <img src="../img/usagi.png" alt="Vanelloppe Meyer">
+                                    <img src="../img/vanelloppe.png" alt="Vanelloppe Meyer">
                                     <div class="txt-personajes">
                                         <strong>Nombre:</strong><p>Vanelloppe Monroe</p>
                                         <strong>Edad:</strong><p>27 años.</p>
@@ -463,33 +467,93 @@
         <!-- /personajes -->
     </section>    
   </main>
-  <footer class="footer container-fluid position-relative m-auto">
-    <div class="row">
-      <nav class="nav">
-        <a class="nav-link col-2 d-flex " aria-current="page" href="#sobre-mi">¿Quien soy?</a>
-        <a class="nav-link col-2 d-flex " href="../paginas/personajes.html">Mis dibujos personales</a>
-        <a class="nav-link col-2" href="../paginas/otros.html">Mis trabajos</a>
-        <a class="nav-link col-1 d-flex " href="#comisiones">Comisiones</a>
-        <div class="col-1">
-          <ul class="d-flex flex-column">
-            <li>
-              <a href="https://www.youtube.com/@freyacleripson8237"><i class='bx bxl-youtube' ></i></a>    
-            </li>
-            <li>
-              <a href="https://www.discordapp.com/users/372849037885308931"><i class='bx bxl-discord-alt'></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/freya_cleripson/"><i class='bx bxl-instagram-alt' ></i></a>
-            </li>
-          </ul>
+    <footer class="footer container-fluid row">
+        <div class="row">
+        <!-- Imagen Footer, Mis redes-->
+            <div class="col-xxl col-xl col-lg col-md col-sm-6 col-6">
+                <section class="img-redes">
+                    <div>
+                        <a href="../index.html">
+                            <img src="../img/inicio.png" alt="Logo inicio">
+                        </a>
+                    </div>
+                    <h3 class="fw-bold">Mis redes Sociales</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="https://www.youtube.com/@freyacleripson8237" target="_blank">
+                                    <i class='bx bxl-youtube fw-bold'></i>
+                                
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.discordapp.com/users/372849037885308931" target="_blank">
+                                    <i class='bx bxl-discord-alt fw-bold' ></i>
+                                </a>     
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/freya_cleripson/" target="_blank">
+                                    <i class='bx bxl-instagram-alt fw-bold' ></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div> 
+            <!-- /Imagen footer, Mis Redes-->
+            <!-- Pincipal, Personajes -->
+            <div class="prin-pers col-xxl col-xl col-lg col-md col-sm-6 col-6">
+                <!-- Principal -->
+                <section class="principal">
+                    <h3 class="fw-bold">Principal</h3>
+                    <div>
+                        <a href="#sobre-mi">¿Quien soy?</a>
+                        <a href="#encuesta">Mis proximos trabajos</a>
+                        <a href="#ult-publicaciones">Mis ultimos trabajos</a>
+                    </div>
+                </section>
+                <!-- /Principal -->
+                <!-- Personajes -->
+                <section class="pers-footer">
+                    <h3 class="fw-bold">Personajes</h3>
+                    <a href="../paginas/personajes.html">Mis personajes</a>  
+                </section>
+                <!-- /Personajes -->
+            </div>
+            <!-- /Pincipal, Personajes -->
+            <!-- Otros trabajos -->
+            <div class="ot-footer col-xxl col-xl col-lg col-md col-sm-6 col-6">
+                <Section>
+                    <h3 class="fw-bold">Mis otros trabajos</h3>
+                    <div>
+                        <a href="#personajes">Otros Personajes</a>
+                        <a href="#objetos">Objetos personalizados</a>
+                        <a href="#animaciones">Mis trabajo en Animaciones</a>
+                    </div>
+                </Section>
+            </div>
+            <!-- /Otros trabajos -->
+            <!-- Comisiones -->
+            <div class="com-footer col-xxl col-xl col-lg col-md col-sm-6 col-6">
+                <section>
+                    <h3 class="fw-bold">Soliciotud de Comisiones</h3>
+                    <a href="#comisiones"> Comisiones</a>
+                </section>
+            </div>
+            <!-- /Comisiones -->
         </div>
-        <div class="col-4">
-          <img src="../img/inicio.png" alt="">
-        </div>
-      </nav>      
-    </div> 
-  </footer>
-<script src="../js/bootstrap.js"></script>
-<script src="../js/popper.js"></script>
+
+    </footer>
+<!-- Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Bootstrap -->
+<script src="/js/bootstrap.js"></script>
+<!-- Popper -->
+<script src="/js/popper.js"></script>
 </body>
 </html>

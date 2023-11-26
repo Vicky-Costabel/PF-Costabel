@@ -6,6 +6,12 @@
   font-family: "Photograph";
   src: url(../font/Photograph\ Signature.ttf);
 }
+@media (max-width: 1024px) {
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -19,64 +25,70 @@
   .footer div div .img-redes div a img {
     width: 100%;
   }
-  .sobre-mi div {
-    display: block;
+  .sob-enc .sobre-mi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  .sobre-mi div img {
-    width: 80%;
+  .sob-enc .sobre-mi div img {
+    width: 60%;
   }
-  .ult-enc {
-    flex-direction: column-reverse;
-  }
-  .ult-enc .ult-publicaciones {
+  .ult .ult-pub-slider .ult-pub-galeria {
     width: 100vw;
+    height: 50vh;
   }
-  /* Ultimas publicaciones */
-  /* Personajes */
-  /* Navegacion */
-  .nav-hor {
+  .mis-personajes nav .nav-hor {
     display: none;
   }
-  .nav-ver {
+  .mis-personajes nav div .nav-ver {
     display: inline-flex;
   }
-  /* Contenedor personajes */
-  .con-personajes {
-    width: 80vw;
+  .mis-personajes nav div .personajes {
     display: block;
   }
-  .con-personajes div {
-    display: inline-block;
-  }
-  .con-personajes img {
-    width: 80%;
-  }
-  #charlie img {
-    width: 90%;
-  }
-  /* Contacto */
-  /* Puertas */
-  .puertas-a img {
+  .mis-personajes nav div .personajes div section div .img-personajes {
     width: 100%;
   }
-  /* formulario de comisiones */
-  .formulario {
-    width: 80%;
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 2;
+         column-count: 2;
   }
-  /* grid */
-  /* personajes */
 }
+/* Contacto */
+/* Puertas */
+.puertas-a img {
+  width: 100%;
+}
+
+/* formulario de comisiones */
+.formulario {
+  width: 80%;
+}
+
+/* grid */
+/* personajes */
 @media (max-width: 576px) {
-  /* Index */
-  /* Ultimas publicaciones,*/
-  .ult-enc {
-    flex-direction: column-reverse;
+  .sob-enc .sobre-mi {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .ult-enc .ult-publicaciones {
-    width: 100vw;
+  .sob-enc .sobre-mi div img {
+    width: 90%;
   }
-  /* encuesta */
-  .puertas-a img {
+  .ult .ult-pub-slider .ult-pub-galeria {
+    width: 120vw;
+    height: 60vh;
+  }
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .puertas-b {
+    display: block;
+  }
+  .puertas-b img {
     width: 80vw;
   }
   /* Formulario de comisiones */
@@ -86,6 +98,31 @@
   }
 }
 @media (max-width: 575px) {
+  .footer {
+    display: flex;
+    background-color: none;
+    margin: 0px;
+  }
+  .footer div {
+    display: inline-flex;
+  }
+  .footer div div .img-redes div a img {
+    width: 100%;
+  }
+  .ult .ult-pub-slider .ult-pub-galeria {
+    width: 100vw;
+    height: 100vh;
+    margin: 10% 0 0;
+    align-items: none;
+    justify-content: none;
+  }
+  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor {
+    justify-content: none;
+    align-items: none;
+  }
+  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img {
+    right: 5%;
+  }
   /* Index */
   /* Encuesta */
   /* Contacto */
@@ -152,7 +189,7 @@ body h1 {
 }
 
 .navegacion {
-  border-radius: 2rem;
+  border-radius: 30px;
 }
 .navegacion .nav-botones {
   width: 100%;
@@ -215,89 +252,156 @@ body h1 {
   font-size: 0.7rem;
 }
 
-.sobre-mi {
+.sob-enc .sobre-mi {
   display: flexbox;
-  border-radius: 2rem;
+  border-radius: 25px;
   justify-items: center;
 }
-.sobre-mi h2 {
+.sob-enc .sobre-mi h2 {
   text-align: center;
   display: block;
 }
-.sobre-mi div {
+.sob-enc .sobre-mi div {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   padding: 2%;
 }
-.sobre-mi div img {
-  width: 30%;
+.sob-enc .sobre-mi div img {
   background-color: aqua;
-  border-radius: 2rem;
+  border-radius: 25px;
 }
-.sobre-mi div div {
+.sob-enc .sobre-mi div div {
   display: inline-flex p;
   display-display: block;
   display-flex-direction: column;
   display-padding: 1%;
 }
 
-.ult-enc {
+.ult {
+  height: 100vh;
+}
+.ult h2 {
+  text-align: center;
+  display: block;
+}
+.ult .ult-pub-slider {
+  max-width: 90vw;
+  max-height: 100vh;
+}
+.ult .ult-pub-slider .ult-pub-galeria {
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ult-enc .ult-publicaciones {
-  height: 60%;
-  display: flexbox;
-}
-.ult-enc .ult-publicaciones .carrusel-personajes {
+.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor {
+  width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.ult-enc .ult-publicaciones .carrusel-personajes div div {
-  width: 80%;
-  border-radius: 2rem;
+.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor input[type=radio] {
+  display: none;
 }
-.ult-enc .encuesta {
-  font-size: 2rem;
+.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
-.ult-enc .encuesta h2 {
-  text-align: center;
-  display: block;
+.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img .card {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: rgb(255, 255, 255);
 }
-.ult-enc .encuesta div form div label {
-  font-size: 1.2rem;
+.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img .card img {
+  height: 100%;
+  border-radius: 25px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.ult #item-1:checked ~ .ult-pub-con-img #selector-18,
+.ult #item-2:checked ~ .ult-pub-con-img #selector-1,
+.ult #item-3:checked ~ .ult-pub-con-img #selector-2,
+.ult #item-4:checked ~ .ult-pub-con-img #selector-3,
+.ult #item-5:checked ~ .ult-pub-con-img #selector-4,
+.ult #item-6:checked ~ .ult-pub-con-img #selector-5,
+.ult #item-7:checked ~ .ult-pub-con-img #selector-6,
+.ult #item-8:checked ~ .ult-pub-con-img #selector-7,
+.ult #item-9:checked ~ .ult-pub-con-img #selector-8,
+.ult #item-10:checked ~ .ult-pub-con-img #selector-9,
+.ult #item-11:checked ~ .ult-pub-con-img #selector-10,
+.ult #item-12:checked ~ .ult-pub-con-img #selector-11,
+.ult #item-13:checked ~ .ult-pub-con-img #selector-12,
+.ult #item-14:checked ~ .ult-pub-con-img #selector-13,
+.ult #item-15:checked ~ .ult-pub-con-img #selector-14,
+.ult #item-16:checked ~ .ult-pub-con-img #selector-15,
+.ult #item-17:checked ~ .ult-pub-con-img #selector-16,
+.ult #item-18:checked ~ .ult-pub-con-img #selector-17 {
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0.6;
+  z-index: 0;
+}
+.ult #item-1:checked ~ .ult-pub-con-img #selector-2,
+.ult #item-2:checked ~ .ult-pub-con-img #selector-3,
+.ult #item-3:checked ~ .ult-pub-con-img #selector-4,
+.ult #item-4:checked ~ .ult-pub-con-img #selector-5,
+.ult #item-5:checked ~ .ult-pub-con-img #selector-6,
+.ult #item-6:checked ~ .ult-pub-con-img #selector-7,
+.ult #item-7:checked ~ .ult-pub-con-img #selector-8,
+.ult #item-8:checked ~ .ult-pub-con-img #selector-9,
+.ult #item-9:checked ~ .ult-pub-con-img #selector-10,
+.ult #item-10:checked ~ .ult-pub-con-img #selector-11,
+.ult #item-11:checked ~ .ult-pub-con-img #selector-12,
+.ult #item-12:checked ~ .ult-pub-con-img #selector-13,
+.ult #item-13:checked ~ .ult-pub-con-img #selector-14,
+.ult #item-14:checked ~ .ult-pub-con-img #selector-15,
+.ult #item-15:checked ~ .ult-pub-con-img #selector-16,
+.ult #item-16:checked ~ .ult-pub-con-img #selector-17,
+.ult #item-17:checked ~ .ult-pub-con-img #selector-18,
+.ult #item-18:checked ~ .ult-pub-con-img #selector-1 {
+  transform: translateX(40%) scale(0.8);
+  opacity: 0.6;
+  z-index: 0;
+}
+.ult #item-1:checked ~ .ult-pub-con-img #selector-1,
+.ult #item-2:checked ~ .ult-pub-con-img #selector-2,
+.ult #item-3:checked ~ .ult-pub-con-img #selector-3,
+.ult #item-4:checked ~ .ult-pub-con-img #selector-4,
+.ult #item-5:checked ~ .ult-pub-con-img #selector-5,
+.ult #item-6:checked ~ .ult-pub-con-img #selector-6,
+.ult #item-7:checked ~ .ult-pub-con-img #selector-7,
+.ult #item-8:checked ~ .ult-pub-con-img #selector-8,
+.ult #item-9:checked ~ .ult-pub-con-img #selector-9,
+.ult #item-10:checked ~ .ult-pub-con-img #selector-10,
+.ult #item-11:checked ~ .ult-pub-con-img #selector-11,
+.ult #item-12:checked ~ .ult-pub-con-img #selector-12,
+.ult #item-13:checked ~ .ult-pub-con-img #selector-13,
+.ult #item-14:checked ~ .ult-pub-con-img #selector-14,
+.ult #item-15:checked ~ .ult-pub-con-img #selector-15,
+.ult #item-16:checked ~ .ult-pub-con-img #selector-16,
+.ult #item-17:checked ~ .ult-pub-con-img #selector-17,
+.ult #item-18:checked ~ .ult-pub-con-img #selector-18 {
+  transform: translateX(0) scale(1);
+  z-index: 2;
 }
 
 .nav-ver {
   display: none;
 }
 
-.con-personajes {
-  padding: 2%;
-}
-.con-personajes h2 {
-  text-align: center;
-  display: block;
-  font-family: "photograph";
-  font-size: 2.5rem;
-}
-.con-personajes div {
-  display: inline-flex;
-}
-.con-personajes div img {
-  width: 40%;
-  height: 50%;
-  border-radius: 2rem;
-}
-.con-personajes div .txt-personajes {
-  display: block;
-  flex-direction: column;
-  padding: 1%;
-}
-
 .personajes #charlie {
   background-color: rgba(143, 37, 37, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #charlie img {
   height: 60%;
@@ -305,102 +409,88 @@ body h1 {
 }
 .personajes #freya {
   background-color: rgba(143, 106, 112, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #hotaru {
   background-color: rgba(127, 127, 127, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #ikko {
   background-color: rgba(123, 123, 253, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #jo {
   background-color: rgba(49, 49, 49, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #koi {
   background-color: rgba(253, 123, 123, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #lilith {
   background-color: rgba(155, 155, 155, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #mew {
   background-color: rgba(44, 196, 72, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #neeko {
   background-color: rgba(123, 253, 175, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #opal {
   background-color: rgba(123, 179, 253, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #phoenix {
   background-color: rgba(128, 17, 197, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #ri {
   background-color: rgba(184, 184, 195, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #thea {
   background-color: rgba(214, 114, 254, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #usagi {
   background-color: rgba(114, 172, 254, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #vanelloppe {
   background-color: rgba(254, 249, 114, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 .personajes #zatch {
   background-color: rgba(255, 152, 197, 0.5);
-  border-radius: 1rem;
+  border-radius: 25px;
 }
 
-.ot-objetos {
+.otros-trabajos h2 {
+  text-align: center;
+}
+.otros-trabajos .ot-galeria-img {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  max-width: 100vw;
+  margin: 0 0 0 auto;
+  margin-bottom: 5%;
+}
+.otros-trabajos .ot-galeria-img .ot-card {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
+  margin-bottom: 5%;
   display: flex;
-  width: 80vw;
-  height: 430px;
 }
-.ot-objetos div h2 {
-  font-family: "photograph";
-}
-.ot-objetos div div img {
-  width: 0px;
-  flex-grow: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 8;
-  transition: 1s ease;
-}
-.ot-objetos div div img:hover {
-  width: 300px;
-  opacity: 1;
-}
-
-.ot-personajes {
-  display: flex;
-  width: 80vw;
-  height: 530px;
-}
-.ot-personajes img {
-  width: 0px;
-  flex-grow: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 8;
-  transition: 1s ease;
-}
-.ot-personajes img:hover {
-  width: 300px;
-  opacity: 1;
+.otros-trabajos .ot-galeria-img .ot-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: rgb(216, 216, 216);
 }
 
 .sipnosis img {
@@ -449,7 +539,7 @@ body h1 {
 .puertas .puertas-a div a .img-contacto {
   width: 100%;
   background-color: aqua;
-  border-radius: 2rem;
+  border-radius: 25px;
 }
 .puertas .puertas-b {
   display: none;
@@ -460,13 +550,13 @@ body h1 {
   background-color: aqua;
   display: none;
   margin-bottom: 3%;
-  border-radius: 2rem;
+  border-radius: 25px;
 }
 
 .formulario {
   justify-content: center;
   width: 50vw;
-  border-radius: 2rem;
+  border-radius: 25px;
   margin: 3%;
   padding: 2%;
   font-size: 1rem;
@@ -490,6 +580,12 @@ body h1 {
   margin: 2%;
 }
 
+@media (max-width: 1024px) {
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -503,64 +599,70 @@ body h1 {
   .footer div div .img-redes div a img {
     width: 100%;
   }
-  .sobre-mi div {
-    display: block;
+  .sob-enc .sobre-mi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  .sobre-mi div img {
-    width: 80%;
+  .sob-enc .sobre-mi div img {
+    width: 60%;
   }
-  .ult-enc {
-    flex-direction: column-reverse;
-  }
-  .ult-enc .ult-publicaciones {
+  .ult .ult-pub-slider .ult-pub-galeria {
     width: 100vw;
+    height: 50vh;
   }
-  /* Ultimas publicaciones */
-  /* Personajes */
-  /* Navegacion */
-  .nav-hor {
+  .mis-personajes nav .nav-hor {
     display: none;
   }
-  .nav-ver {
+  .mis-personajes nav div .nav-ver {
     display: inline-flex;
   }
-  /* Contenedor personajes */
-  .con-personajes {
-    width: 80vw;
+  .mis-personajes nav div .personajes {
     display: block;
   }
-  .con-personajes div {
-    display: inline-block;
-  }
-  .con-personajes img {
-    width: 80%;
-  }
-  #charlie img {
-    width: 90%;
-  }
-  /* Contacto */
-  /* Puertas */
-  .puertas-a img {
+  .mis-personajes nav div .personajes div section div .img-personajes {
     width: 100%;
   }
-  /* formulario de comisiones */
-  .formulario {
-    width: 80%;
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 2;
+         column-count: 2;
   }
-  /* grid */
-  /* personajes */
 }
+/* Contacto */
+/* Puertas */
+.puertas-a img {
+  width: 100%;
+}
+
+/* formulario de comisiones */
+.formulario {
+  width: 80%;
+}
+
+/* grid */
+/* personajes */
 @media (max-width: 576px) {
-  /* Index */
-  /* Ultimas publicaciones,*/
-  .ult-enc {
-    flex-direction: column-reverse;
+  .sob-enc .sobre-mi {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .ult-enc .ult-publicaciones {
-    width: 100vw;
+  .sob-enc .sobre-mi div img {
+    width: 90%;
   }
-  /* encuesta */
-  .puertas-a img {
+  .ult .ult-pub-slider .ult-pub-galeria {
+    width: 120vw;
+    height: 60vh;
+  }
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .puertas-b {
+    display: block;
+  }
+  .puertas-b img {
     width: 80vw;
   }
   /* Formulario de comisiones */
@@ -570,6 +672,31 @@ body h1 {
   }
 }
 @media (max-width: 575px) {
+  .footer {
+    display: flex;
+    background-color: none;
+    margin: 0px;
+  }
+  .footer div {
+    display: inline-flex;
+  }
+  .footer div div .img-redes div a img {
+    width: 100%;
+  }
+  .ult .ult-pub-slider .ult-pub-galeria {
+    width: 100vw;
+    height: 100vh;
+    margin: 10% 0 0;
+    align-items: none;
+    justify-content: none;
+  }
+  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor {
+    justify-content: none;
+    align-items: none;
+  }
+  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img {
+    right: 5%;
+  }
   /* Index */
   /* Encuesta */
   /* Contacto */
