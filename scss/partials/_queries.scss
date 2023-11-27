@@ -1,8 +1,59 @@
 @media(max-width:1024px){
+
     // Otros trabajos
     .otros-trabajos{
         .ot-galeria-img{
             column-count: 3;
+        }
+    }
+}
+
+@media(max-width:992px){
+    // Personajes
+    .mis-personajes{
+        width: 95vw;
+        .personajes{
+            // display: inline-flex;
+            .nav-hor{
+                display: none;
+            }
+            div{
+                .nav-ver{
+                    width: 5%;
+                    font-size: 0.8rem;
+                    display: inline-flex;
+                }
+            }
+            .personajes-con{
+                margin-left: 5%;
+                div{
+                    .con-personajes{
+                        h2{
+                            font-family: "photograph";
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                        div{
+                            display: inline-block;
+                            padding: 3%;
+                            img{
+                                border-radius: 25px;
+                                width: 60%;
+                                height: 50%;
+                            }
+                            .txt-personajes{
+                                width: 100%;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #charlie{
+            img{
+                height: 80%;
+            }
         }
     }
 }
@@ -57,30 +108,81 @@
     }
 
     // Pesonajes
+    // Personajes
     .mis-personajes{
-        nav{
+        width: 95vw;
+        .personajes{
+            // display: inline-flex;
             .nav-hor{
                 display: none;
             }
             div{
                 .nav-ver{
+                    width: 5%;
+                    font-size: 0.8rem;
                     display: inline-flex;
                 }
-                .personajes{
-                    display: block;
-                    div{
-                        section{
-                            div{
-                                .img-personajes{
-                                    width: 100%;
-                                }
+            }
+            .personajes-con{
+                margin-left: 5%;
+                div{
+                    .con-personajes{
+                        h2{
+                            font-family: "photograph";
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                        div{
+                            display: inline-block;
+                            padding: 3%;
+                            img{
+                                border-radius: 25px;
+                                width: 70%;
+                                height: 50%;
+                                
+                            }
+                            .txt-personajes{
+                                width: 100%;
+                                display: inline-block;
                             }
                         }
                     }
                 }
             }
         }
+        #charlie{
+            img{
+                height: 100%;
+            }
+        }
     }
+
+
+
+    // .mis-personajes{
+    //     nav{
+    //         .nav-hor{
+    //             display: none;
+    //         }
+    //         div{
+    //             .nav-ver{
+    //                 display: inline-flex;
+    //             }
+    //             .personajes{
+    //                 display: block;
+    //                 div{
+    //                     section{
+    //                         div{
+    //                             .img-personajes{
+    //                                 width: 100%;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
     // Otros trabajos
     .otros-trabajos{
         .ot-galeria-img{
@@ -148,6 +250,51 @@
             .ult-pub-galeria{
                 width: 120vw;
                 height: 60vh;
+            }
+        }
+    }
+
+    // Personajes
+    .mis-personajes{
+        width: 90vw;
+        .personajes{
+            // display: inline-flex;
+            .nav-hor{
+                display: none;
+            }
+            div{
+                .nav-ver{
+                    width: 3%;
+                    font-size: 0.8rem;
+                    display: inline-flex;
+                }
+            }
+            .personajes-con{
+                margin-left: 10%;
+                div{
+                    .con-personajes{
+                        h2{
+                            font-family: "photograph";
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                        div{
+                            display: inline-block;
+                            padding: 3%;
+                            img{
+                                border-radius: 25px;
+                                width: 100%;
+                                height: 50%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        #charlie{
+            img{
+                height: 100%;
             }
         }
     }

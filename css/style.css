@@ -12,6 +12,43 @@
          column-count: 3;
   }
 }
+@media (max-width: 992px) {
+  .mis-personajes {
+    width: 95vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 60%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+    width: 100%;
+    display: inline-block;
+  }
+  .mis-personajes #charlie img {
+    height: 80%;
+  }
+}
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -37,17 +74,40 @@
     width: 100vw;
     height: 50vh;
   }
-  .mis-personajes nav .nav-hor {
+  .mis-personajes {
+    width: 95vw;
+  }
+  .mis-personajes .personajes .nav-hor {
     display: none;
   }
-  .mis-personajes nav div .nav-ver {
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
     display: inline-flex;
   }
-  .mis-personajes nav div .personajes {
-    display: block;
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
   }
-  .mis-personajes nav div .personajes div section div .img-personajes {
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 70%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
     width: 100%;
+    display: inline-block;
+  }
+  .mis-personajes #charlie img {
+    height: 100%;
   }
   .otros-trabajos .ot-galeria-img {
     -moz-column-count: 2;
@@ -80,6 +140,37 @@
   .ult .ult-pub-slider .ult-pub-galeria {
     width: 120vw;
     height: 60vh;
+  }
+  .mis-personajes {
+    width: 90vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 3%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 10%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 100%;
+    height: 50%;
+  }
+  .mis-personajes #charlie img {
+    height: 100%;
   }
   .otros-trabajos .ot-galeria-img {
     -moz-column-count: 1;
@@ -395,77 +486,86 @@ body h1 {
   z-index: 2;
 }
 
-.nav-ver {
+.mis-personajes {
+  width: 95vw;
+}
+.mis-personajes .personajes div {
+  border-radius: 25px;
+}
+.mis-personajes .personajes div .nav-ver {
   display: none;
 }
-
-.personajes #charlie {
-  background-color: rgba(143, 37, 37, 0.5);
-  border-radius: 25px;
+.mis-personajes .personajes .personajes-con {
+  margin-left: 2%;
 }
-.personajes #charlie img {
-  height: 60%;
+.mis-personajes .personajes .personajes-con div .con-personajes h2 {
+  font-family: "photograph";
+  text-align: center;
+  font-size: 50px;
+}
+.mis-personajes .personajes .personajes-con div .con-personajes div {
+  display: inline-flex;
+  padding: 3%;
+}
+.mis-personajes .personajes .personajes-con div .con-personajes div img {
+  border-radius: 25px;
   width: 40%;
+  height: 60%;
 }
-.personajes #freya {
+.mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+  width: 100%;
+  display: inline-block;
+}
+.mis-personajes #charlie {
+  background-color: rgba(143, 37, 37, 0.5);
+}
+.mis-personajes #charlie img {
+  height: 60%;
+}
+.mis-personajes #freya {
   background-color: rgba(143, 106, 112, 0.5);
-  border-radius: 25px;
 }
-.personajes #hotaru {
+.mis-personajes #hotaru {
   background-color: rgba(127, 127, 127, 0.5);
-  border-radius: 25px;
 }
-.personajes #ikko {
+.mis-personajes #ikko {
   background-color: rgba(123, 123, 253, 0.5);
-  border-radius: 25px;
 }
-.personajes #jo {
+.mis-personajes #jo {
   background-color: rgba(49, 49, 49, 0.5);
-  border-radius: 25px;
 }
-.personajes #koi {
+.mis-personajes #koi {
   background-color: rgba(253, 123, 123, 0.5);
-  border-radius: 25px;
 }
-.personajes #lilith {
+.mis-personajes #lilith {
   background-color: rgba(155, 155, 155, 0.5);
-  border-radius: 25px;
 }
-.personajes #mew {
+.mis-personajes #mew {
   background-color: rgba(44, 196, 72, 0.5);
-  border-radius: 25px;
 }
-.personajes #neeko {
+.mis-personajes #neeko {
   background-color: rgba(123, 253, 175, 0.5);
-  border-radius: 25px;
 }
-.personajes #opal {
+.mis-personajes #opal {
   background-color: rgba(123, 179, 253, 0.5);
-  border-radius: 25px;
 }
-.personajes #phoenix {
+.mis-personajes #phoenix {
   background-color: rgba(128, 17, 197, 0.5);
-  border-radius: 25px;
 }
-.personajes #ri {
+.mis-personajes #ri {
   background-color: rgba(184, 184, 195, 0.5);
-  border-radius: 25px;
 }
-.personajes #thea {
+.mis-personajes #thea {
   background-color: rgba(214, 114, 254, 0.5);
-  border-radius: 25px;
 }
-.personajes #usagi {
+.mis-personajes #usagi {
   background-color: rgba(114, 172, 254, 0.5);
-  border-radius: 25px;
 }
-.personajes #vanelloppe {
+.mis-personajes #vanelloppe {
   background-color: rgba(254, 249, 114, 0.5);
-  border-radius: 25px;
 }
-.personajes #zatch {
+.mis-personajes #zatch {
   background-color: rgba(255, 152, 197, 0.5);
-  border-radius: 25px;
 }
 
 .otros-trabajos h2 {
@@ -586,6 +686,43 @@ body h1 {
          column-count: 3;
   }
 }
+@media (max-width: 992px) {
+  .mis-personajes {
+    width: 95vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 60%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+    width: 100%;
+    display: inline-block;
+  }
+  .mis-personajes #charlie img {
+    height: 80%;
+  }
+}
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -611,17 +748,40 @@ body h1 {
     width: 100vw;
     height: 50vh;
   }
-  .mis-personajes nav .nav-hor {
+  .mis-personajes {
+    width: 95vw;
+  }
+  .mis-personajes .personajes .nav-hor {
     display: none;
   }
-  .mis-personajes nav div .nav-ver {
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
     display: inline-flex;
   }
-  .mis-personajes nav div .personajes {
-    display: block;
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
   }
-  .mis-personajes nav div .personajes div section div .img-personajes {
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 70%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
     width: 100%;
+    display: inline-block;
+  }
+  .mis-personajes #charlie img {
+    height: 100%;
   }
   .otros-trabajos .ot-galeria-img {
     -moz-column-count: 2;
@@ -654,6 +814,37 @@ body h1 {
   .ult .ult-pub-slider .ult-pub-galeria {
     width: 120vw;
     height: 60vh;
+  }
+  .mis-personajes {
+    width: 90vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 3%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 10%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 100%;
+    height: 50%;
+  }
+  .mis-personajes #charlie img {
+    height: 100%;
   }
   .otros-trabajos .ot-galeria-img {
     -moz-column-count: 1;

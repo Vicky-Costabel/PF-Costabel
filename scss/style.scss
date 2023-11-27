@@ -2,8 +2,6 @@
 
 @import "./partials/queries";
 
-
-
 // Reset
 *{
     margin: 0;
@@ -28,9 +26,6 @@ body{
 
 }
 
-
-
-
 // Navegacion
 .logo{
     width: 70%
@@ -46,8 +41,6 @@ body{
         font-size: 150%;
     }
 }
-
-
 
 // Footer
 .footer{
@@ -287,81 +280,111 @@ body{
 }
 
 // Personajes
-// navegacion personajes
-.nav-ver{
-    display: none;
-}
+
 // Contenedor personajes
+.mis-personajes{
+    width: 95vw;
+    .personajes{ 
+        div{
+            border-radius: 25px;
+            .nav-ver{
+                display: none;
+            }
+        }
+        .personajes-con{
+           margin-left: 2%;
+           div{
+                .con-personajes{
+                    h2{
+                     font-family: "photograph";
+                     text-align: center;
+                     font-size: 50px;
+                    }
+                    div{
+                        display: inline-flex;
+                        padding: 3%;
+                        img{
+                            border-radius: 25px;
+                            width: 40%;
+                            height: 60%;
+                        }
+                        .txt-personajes{
+                            width: 100%;
+                            
+                            display: inline-block
+                        }
+                    }
+                }
+           }
+        }
+    }
 
+    
+    //         div{
+    //             padding: 3%;
+    //             display: inline-flex;
+    //             img{
+    //                 border-radius: 20px;
+    //                 height: 50%;
+    //             }
+    //             .txt-personajes{
+    //                 display: block;
+    //             }
+    //         }
+    //     }
+    // }
 
-.personajes{
+    // Personajes
     #charlie{
         background-color: rgba(143, 37, 37, 0.5);
-        border-radius: 25px;
         img{
             height: 60%;
-            width: 40%;
         }
     }
     #freya{
         background-color: rgba(143, 106, 112, 0.5);
-        border-radius: 25px;
     } 
     #hotaru{
         background-color: rgba(127, 127, 127, 0.5);
-        border-radius: 25px;
     }
     #ikko{
         background-color: rgba(123, 123, 253, 0.5);
-        border-radius: 25px;
     }
     #jo{
         background-color: rgba(49, 49, 49, 0.5);
-        border-radius: 25px;
     }
     #koi{
         background-color: rgba(253, 123, 123, 0.5);
-        border-radius: 25px;
     }
     #lilith{
         background-color: rgba(155, 155, 155, 0.5);
-        border-radius: 25px;
     }
     #mew{
         background-color: rgba(44, 196, 72, 0.5);
-        border-radius: 25px;
     }
     #neeko{
         background-color: rgba(123, 253, 175, 0.5);
-        border-radius: 25px;
     }
     #opal{
         background-color: rgba(123, 179, 253, 0.5);
-        border-radius: 25px;
     }
     #phoenix{
         background-color: rgba(128, 17, 197, 0.5);
-        border-radius: 25px;
     }
     #ri{
         background-color: rgba(184, 184, 195, 0.5);
-        border-radius: 25px;
     }
     #thea{
         background-color: rgba(214, 114, 254, 0.5);
-        border-radius: 25px;
     }
     #usagi{
         background-color: rgba(114, 172, 254, 0.5);
-        border-radius: 25px;
     }
     #vanelloppe{
         background-color: rgba(254, 249, 114, 0.5);
-        border-radius: 25px;
     }
     #zatch{
         background-color: rgba(255, 152, 197, 0.5);
-        border-radius: 25px;
     }
 }
 
