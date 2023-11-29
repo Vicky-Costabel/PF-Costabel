@@ -198,9 +198,9 @@ body{
            div{
                 .con-personajes{
                     h2{
-                     font-family: "photograph";
-                     text-align: center;
-                     font-size: 50px;
+                        font-family: "photograph";
+                        text-align: center;
+                        font-size: 50px;
                     }
                     div{
                         display: inline-flex;
@@ -356,124 +356,83 @@ body{
     }
 }
 
-// .{
-//     width: 20vw;
-//     height: 10vh;
-//     border-radius: 20px;
-    
-// }
-// Contenedor
-// .con-entrenadores{
-//     font-size: 1.2rem;
-//     margin-left: 0vw;
-//     width: 97vw;
-//     div{
-//         div{
-//             h2{
-//                 text-align: center;
-//                 display: block;
-//                 font-family: "photograph";
-//                 font-size: 2.5rem; 
-//             }      
-            
-//             div{
-//                 display: inline-flex;
-//                 width: 80vw;
-
-//                  img{
-//                     display: inline-flex;
-//                     border-radius: 2rem;
-//                     width: 30vw;
-//                     height: 80vh;
-                    
-//                 }
-//                 div{
-//                     display: inline-flex;
-//                     padding: 2%;
-        
-//                     .txt-entrenadores{
-//                         display: block; 
-//                         padding: 1%;
-                        
-//                     }
-//                 }
-//             }  
-//         }
-//     }    
-// }
-
-
-
 // Contacto
 // Puertas
 .puertas{
+    width: 85vw;
     .puertas-a{
+        display: flex;
+        justify-content: space-between;
         div{
+            
+            display: inline-flex;
+            flex-direction: column;
+            h2{
+                font-family: "photograph";
+                text-align: center;
+                font-size: 50px;
+                display: block;
+
+            }
             a{
+                display: block;
                 .img-contacto{
                     width: 100%;
-                    background-color: aqua;
-                    border-radius: 25px; 
-                 }
-            }
-            
+                }
+            }  
         }
     }
     .puertas-b{
         display: none;
-
-        div{
-            a{
-                .img-contacto{
-                    height: 10rem;
-                    width: 90vw;
-                    background-color: aqua;
-                    display: none;
-                    margin-bottom: 3%;
-                    border-radius: 25px;
-                }
-            }
-        }
     }
 }
-
 // Formulario de Comisiones
-.formulario{
-    justify-content: center;
-    width: 50vw;
-    border-radius: 25px;
-    margin: 3%;
-    padding: 2%;
-    font-size: 1rem;
+
+
+
+
+
+
+// .formulario{
+//     display: flex;
+//     width: 100%;
     
-    fieldset{
-        justify-content: center;
-        width: 20vw;
-        display: flex;
-        text-align: center;
+//     .form{
+//         justify-content: center;
+//         fieldset{
+//             width: 20vw;
+//             display: flex;
+//             text-align: center;
+    
+//             h3{
+//                 text-align: center;
+//             }
+    
+//             legend{
+//                 display: block;
+//             }
+//             div{
+//                 div{
+//                     .opciones{
+//                         display: inline-block;
+//                         label{
+//                           border-radius: 30px;  
+//                         }
+                        
+//                     }
+//                 }
+//             }
+//         }
+//         div{
+//             #form-floating{
+//                 label{
+//                     margin:2%;
+//                 }
+//             }
+//         }
+//     }
 
-        h3{
-            text-align: center;
-        }
-
-        legend{
-            display: block;
-        }
-        div{
-            div{
-                .opciones{
-                    display: inline-block;
-                }
-            }
-        }
-    }
-    div{
-        #form-floating{
-            label{
-                margin:2%;
-            }
-        }
-    }
-}
+    
+// }
 
 @import "./partials/queries";
