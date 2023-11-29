@@ -1,3 +1,107 @@
+@media(max-width:1024px){
+    // Otros trabajos
+    .otros-trabajos{
+        .ot-galeria-img{
+            column-count: 3;
+        }
+    }
+    
+}
+
+@media(max-width:992px){
+    // Ultimas publicaciones
+    .ult{
+        div{
+            width: 50vw;
+        }
+    }
+    // Personajes
+    .mis-personajes{
+        width: 95vw;
+        .personajes{
+            // display: inline-flex;
+            .nav-hor{
+                display: none;
+            }
+            div{
+                .nav-ver{
+                    width: 5%;
+                    font-size: 0.8rem;
+                    display: inline-flex;
+                }
+            }
+            .personajes-con{
+                margin-left: 5%;
+                div{
+                    .con-personajes{
+                        h2{
+                            font-family: "photograph";
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                        div{
+                            display: inline-block;
+                            padding: 3%;
+                            img{
+                                border-radius: 25px;
+                                width: 60%;
+                                height: 50%;
+                            }
+                            .txt-personajes{
+                                width: 100%;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #charlie{
+            img{
+                height: 80%;
+            }
+        }
+    }
+
+    // Torneo de Leyendas
+    // Sipnosis
+    .sipnosis{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+    // Entrenadores
+    .entrenadores{
+        div{
+            .nav-entrenadores{
+                ul{
+                    li{
+                        a{
+                            img{
+                                width: 15vw;
+                            }
+                        }
+                    }
+                }
+            }
+            .con-entrenadores{
+                div{
+                    div{
+                        .con-img-txt{
+                            img{
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 @media(max-width:768px){
     // Footer
     .footer{
@@ -22,79 +126,249 @@
         }
     }
     // Index
-    // Sobre mi
-    .sobre-mi{
+    // Sobre mi encuesta
+    .sob-enc{
+        .sobre-mi{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                img{
+                    width: 60%;
+                }
+            }
+            
+        }
+    }
+    // Ultimas publicaicones 
+    .ult{
         div{
-            display: block;
+            width: 90vw;
+        }
+    }
+   
+    
+    // Pesonajes
+    // Personajes
+    .mis-personajes{
+        width: 95vw;
+        .personajes{
+            // display: inline-flex;
+            .nav-hor{
+                display: none;
+            }
+            div{
+                .nav-ver{
+                    width: 5%;
+                    font-size: 0.8rem;
+                    display: inline-flex;
+                }
+            }
+            .personajes-con{
+                margin-left: 5%;
+                div{
+                    .con-personajes{
+                        h2{
+                            font-family: "photograph";
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                        div{
+                            display: inline-block;
+                            padding: 3%;
+                            img{
+                                border-radius: 25px;
+                                width: 70%;
+                                height: 50%;
+                                
+                            }
+                            .txt-personajes{
+                                width: 100%;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #charlie{
             img{
-                width: 80%;
+                height: 100%;
             }
         }
     }
-    // Ultimas publicaicones encuesta
-    .ult-enc{
-        flex-direction: column-reverse;
-        .ult-publicaciones{
-         width: 100vw;
+    // Otros trabajos
+    .otros-trabajos{
+        .ot-galeria-img{
+            column-count: 2;
+        }
+    }
+    // Torneo de Leyendas
+    // Sipnosis
+    .sipnosis{
+        width: 100%;
+        display: flex;
+        img{
+            width: 100%;
+        }
+        div{
+            width: 80%;
         }
     }
 
-    /* Ultimas publicaciones */
-   
-
-   /* Personajes */
-   /* Navegacion */
-   .nav-hor{
-    display: none;
-   }
-   .nav-ver{
-    display: inline-flex;
-   }
-   /* Contenedor personajes */
-   .con-personajes{
-    width: 80vw;
-    display: block;
-   }
-   .con-personajes div{
-    display: inline-block;
-   }
-   .con-personajes img{
-    width: 80%;
-    
-   }
-   #charlie img{
-    width: 90%;
-   }
-   /* Contacto */
-   /* Puertas */
-   .puertas-a img{
-    width: 100%;
+    // Entrenadores
+    .entrenadores{
+        width: 100%;
+        height: 100%;
+        
+        div{
+            padding-left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .nav-entrenadores{
+                height: 100%;
+                align-content: space-around;
+                border: 0;
+                border-right: 2px;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 5px;
+                width: 20vw;
+                display: inline-flex;
+                margin-right: 0;
+                padding-right: 0;
+                border-color: rgb(163, 163, 163);
+                ul{
+                    
+                    width: 100%;
+                    margin: 0;                   
+                    li{
+                        a{ 
+                            padding-bottom: 5%;
+                            display: flex;
+                            border: 3px;
+                            border-top-right-radius: 0;
+                            border-right: 0;
+                            border-bottom-left-radius: 5px;
+                            border-bottom: 2px;
+                            padding-right: 0;
+                            border-color: rgb(210, 210, 210);
+                            img{
+                                width: 100%;
+                                border-top-right-radius: 0%;
+                                border-bottom-left-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .con-entrenadores{
+                display: inline-flex;
+                border-left: 2px;
+                div{
+                    div{
+                        .con-img-txt{
+                            display: block;
+                            padding: 3%;
+                            img{
+                                width: 55%;
+                                height: 100%;
+                                margin: 2%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-   /* formulario de comisiones */
-   .formulario{
-    width: 80%;
-   }
-   /* grid */
-   /* personajes */
-   
-} 
+}    
+
 
 @media(max-width: 576px){
     // Index
-    // Ultimas publicaciones, encuesta
-
-    /* Index */
-    /* Ultimas publicaciones,*/
-    .ult-enc{
-        flex-direction: column-reverse;
-        
-        .ult-publicaciones{
-         width: 100vw;
+    // Sobre Mi
+    .sob-enc{
+        .sobre-mi{
+            display: inline-block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            div{
+                img{
+                    width: 90%;
+                }
+            }
+            
         }
     }
-    /* encuesta */
+
+    // Ultimas publicaciones
+    .ult{
+        div{
+            width: 90vw;
+        }
+    }
+
+    // Personajes
+    .mis-personajes{
+        width: 90vw;
+        .personajes{
+            // display: inline-flex;
+            .nav-hor{
+                display: none;
+            }
+            div{
+                .nav-ver{
+                    width: 3%;
+                    font-size: 0.8rem;
+                    display: inline-flex;
+                }
+            }
+            .personajes-con{
+                margin-left: 10%;
+                div{
+                    .con-personajes{
+                        h2{
+                            font-family: "photograph";
+                            text-align: center;
+                            font-size: 50px;
+                        }
+                        div{
+                            display: inline-block;
+                            padding: 3%;
+                            img{
+                                border-radius: 25px;
+                                width: 100%;
+                                height: 50%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        #charlie{
+            img{
+                height: 100%;
+            }
+        }
+    }
+
+    // Otros trabajos
+    .otros-trabajos{
+        .ot-galeria-img{
+            column-count: 1;
+        }
+    }
+
+
    
-    .puertas-a img{
+    
+    .puertas-b{
+        display: block;
+    }
+
+    .puertas-b img{
         width: 80vw;
     }
      /* Formulario de comisiones */
@@ -104,9 +378,32 @@
     }
 }
 
-@media(max-width: 575px){
-    /* Index */
-    /* Encuesta */
+@media(min-width: 575px){
+    // Footer
+    .footer{
+        display: flex;
+        background-color: none;
+        div{
+            display: inline-flex;
+            div{
+                .img-redes{
+                    div{
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Index
+     
+    // Ultimas publicaciones
+    
+  
    
      /* Contacto */
     /* Puertas */
@@ -130,8 +427,9 @@
     .encuesta{
         display: inline;
         flex-direction: column;
-        width: 100vw;
-        height: 60vh;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 3%;
     }
     /* Contacto */
     /* Puertas */

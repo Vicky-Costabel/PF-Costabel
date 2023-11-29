@@ -6,6 +6,64 @@
   font-family: "Photograph";
   src: url(../font/Photograph\ Signature.ttf);
 }
+@media (max-width: 1024px) {
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+@media (max-width: 992px) {
+  .ult div {
+    width: 50vw;
+  }
+  .mis-personajes {
+    width: 95vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 60%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+    width: 100%;
+    display: inline-block;
+  }
+  .mis-personajes #charlie img {
+    height: 80%;
+  }
+  .sipnosis {
+    width: 100%;
+  }
+  .sipnosis img {
+    width: 100%;
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 15vw;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 40%;
+  }
+}
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -19,64 +77,175 @@
   .footer div div .img-redes div a img {
     width: 100%;
   }
-  .sobre-mi div {
-    display: block;
+  .sob-enc .sobre-mi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  .sobre-mi div img {
-    width: 80%;
+  .sob-enc .sobre-mi div img {
+    width: 60%;
   }
-  .ult-enc {
-    flex-direction: column-reverse;
+  .ult div {
+    width: 90vw;
   }
-  .ult-enc .ult-publicaciones {
-    width: 100vw;
+  .mis-personajes {
+    width: 95vw;
   }
-  /* Ultimas publicaciones */
-  /* Personajes */
-  /* Navegacion */
-  .nav-hor {
+  .mis-personajes .personajes .nav-hor {
     display: none;
   }
-  .nav-ver {
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
     display: inline-flex;
   }
-  /* Contenedor personajes */
-  .con-personajes {
-    width: 80vw;
-    display: block;
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
   }
-  .con-personajes div {
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 70%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+    width: 100%;
     display: inline-block;
   }
-  .con-personajes img {
-    width: 80%;
+  .mis-personajes #charlie img {
+    height: 100%;
   }
-  #charlie img {
-    width: 90%;
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 2;
+         column-count: 2;
   }
-  /* Contacto */
-  /* Puertas */
-  .puertas-a img {
+  .sipnosis {
+    width: 100%;
+    display: flex;
+  }
+  .sipnosis img {
     width: 100%;
   }
-  /* formulario de comisiones */
-  .formulario {
+  .sipnosis div {
     width: 80%;
   }
-  /* grid */
-  /* personajes */
+  .entrenadores {
+    width: 100%;
+    height: 100%;
+  }
+  .entrenadores div {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .entrenadores div .nav-entrenadores {
+    height: 100%;
+    align-content: space-around;
+    border: 0;
+    border-right: 2px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    width: 20vw;
+    display: inline-flex;
+    margin-right: 0;
+    padding-right: 0;
+    border-color: rgb(163, 163, 163);
+  }
+  .entrenadores div .nav-entrenadores ul {
+    width: 100%;
+    margin: 0;
+  }
+  .entrenadores div .nav-entrenadores ul li a {
+    padding-bottom: 5%;
+    display: flex;
+    border: 3px;
+    border-top-right-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom: 2px;
+    padding-right: 0;
+    border-color: rgb(210, 210, 210);
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 30px;
+  }
+  .entrenadores div .con-entrenadores {
+    display: inline-flex;
+    border-left: 2px;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt {
+    display: block;
+    padding: 3%;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 55%;
+    height: 100%;
+    margin: 2%;
+  }
 }
 @media (max-width: 576px) {
-  /* Index */
-  /* Ultimas publicaciones,*/
-  .ult-enc {
-    flex-direction: column-reverse;
+  .sob-enc .sobre-mi {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .ult-enc .ult-publicaciones {
-    width: 100vw;
+  .sob-enc .sobre-mi div img {
+    width: 90%;
   }
-  /* encuesta */
-  .puertas-a img {
+  .ult div {
+    width: 90vw;
+  }
+  .mis-personajes {
+    width: 90vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 3%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 10%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 100%;
+    height: 50%;
+  }
+  .mis-personajes #charlie img {
+    height: 100%;
+  }
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .puertas-b {
+    display: block;
+  }
+  .puertas-b img {
     width: 80vw;
   }
   /* Formulario de comisiones */
@@ -85,9 +254,17 @@
     padding: 6%;
   }
 }
-@media (max-width: 575px) {
-  /* Index */
-  /* Encuesta */
+@media (min-width: 575px) {
+  .footer {
+    display: flex;
+    background-color: none;
+  }
+  .footer div {
+    display: inline-flex;
+  }
+  .footer div div .img-redes div a img {
+    width: 100%;
+  }
   /* Contacto */
   /* Puertas */
   .puertas-a img {
@@ -109,8 +286,9 @@
   .encuesta {
     display: inline;
     flex-direction: column;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%;
   }
   /* Contacto */
   /* Puertas */
@@ -152,7 +330,7 @@ body h1 {
 }
 
 .navegacion {
-  border-radius: 2rem;
+  border-radius: 30px;
 }
 .navegacion .nav-botones {
   width: 100%;
@@ -215,241 +393,209 @@ body h1 {
   font-size: 0.7rem;
 }
 
-.sobre-mi {
+.sob-enc .sobre-mi {
   display: flexbox;
-  border-radius: 2rem;
+  border-radius: 25px;
   justify-items: center;
 }
-.sobre-mi h2 {
+.sob-enc .sobre-mi h2 {
   text-align: center;
   display: block;
 }
-.sobre-mi div {
+.sob-enc .sobre-mi div {
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   padding: 2%;
 }
-.sobre-mi div img {
-  width: 30%;
-  background-color: aqua;
-  border-radius: 2rem;
+.sob-enc .sobre-mi div img {
+  border-radius: 25px;
 }
-.sobre-mi div div {
+.sob-enc .sobre-mi div div {
   display: inline-flex p;
   display-display: block;
   display-flex-direction: column;
   display-padding: 1%;
 }
 
-.ult-enc {
-  display: flex;
-  align-items: center;
+.ult h2 {
+  text-align: center;
+  display: block;
+}
+.ult div {
+  width: 40vw;
   justify-content: center;
 }
-.ult-enc .ult-publicaciones {
-  height: 60%;
-  display: flexbox;
+.ult div div {
+  width: 100%;
 }
-.ult-enc .ult-publicaciones .carrusel-personajes {
-  display: flex;
+.ult div div div {
+  width: 90%;
 }
-.ult-enc .ult-publicaciones .carrusel-personajes div div {
-  width: 80%;
-  border-radius: 2rem;
+.ult div div div img {
+  width: 90%;
+  height: 80%;
 }
-.ult-enc .encuesta {
-  font-size: 2rem;
-}
-.ult-enc .encuesta h2 {
-  text-align: center;
-  display: block;
-}
-.ult-enc .encuesta div form div label {
-  font-size: 1.2rem;
+.ult a span {
+  background-color: black;
+  border-radius: 30%;
 }
 
-.nav-ver {
+.mis-personajes {
+  width: 95vw;
+}
+.mis-personajes .personajes div {
+  border-radius: 25px;
+}
+.mis-personajes .personajes div .nav-ver {
   display: none;
 }
-
-.con-personajes {
-  padding: 2%;
+.mis-personajes .personajes .personajes-con {
+  margin-left: 2%;
 }
-.con-personajes h2 {
-  text-align: center;
-  display: block;
+.mis-personajes .personajes .personajes-con div .con-personajes h2 {
   font-family: "photograph";
-  font-size: 2.5rem;
+  text-align: center;
+  font-size: 50px;
 }
-.con-personajes div {
+.mis-personajes .personajes .personajes-con div .con-personajes div {
   display: inline-flex;
+  padding: 3%;
 }
-.con-personajes div img {
+.mis-personajes .personajes .personajes-con div .con-personajes div img {
+  border-radius: 25px;
   width: 40%;
-  height: 50%;
-  border-radius: 2rem;
-}
-.con-personajes div .txt-personajes {
-  display: block;
-  flex-direction: column;
-  padding: 1%;
-}
-
-.personajes #charlie {
-  background-color: rgba(143, 37, 37, 0.5);
-  border-radius: 1rem;
-}
-.personajes #charlie img {
   height: 60%;
-  width: 40%;
 }
-.personajes #freya {
+.mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+  width: 100%;
+  display: inline-block;
+}
+.mis-personajes #charlie {
+  background-color: rgba(143, 37, 37, 0.5);
+}
+.mis-personajes #charlie img {
+  height: 60%;
+}
+.mis-personajes #freya {
   background-color: rgba(143, 106, 112, 0.5);
-  border-radius: 1rem;
 }
-.personajes #hotaru {
+.mis-personajes #hotaru {
   background-color: rgba(127, 127, 127, 0.5);
-  border-radius: 1rem;
 }
-.personajes #ikko {
+.mis-personajes #ikko {
   background-color: rgba(123, 123, 253, 0.5);
-  border-radius: 1rem;
 }
-.personajes #jo {
+.mis-personajes #jo {
   background-color: rgba(49, 49, 49, 0.5);
-  border-radius: 1rem;
 }
-.personajes #koi {
+.mis-personajes #koi {
   background-color: rgba(253, 123, 123, 0.5);
-  border-radius: 1rem;
 }
-.personajes #lilith {
+.mis-personajes #lilith {
   background-color: rgba(155, 155, 155, 0.5);
-  border-radius: 1rem;
 }
-.personajes #mew {
+.mis-personajes #mew {
   background-color: rgba(44, 196, 72, 0.5);
-  border-radius: 1rem;
 }
-.personajes #neeko {
+.mis-personajes #neeko {
   background-color: rgba(123, 253, 175, 0.5);
-  border-radius: 1rem;
 }
-.personajes #opal {
+.mis-personajes #opal {
   background-color: rgba(123, 179, 253, 0.5);
-  border-radius: 1rem;
 }
-.personajes #phoenix {
+.mis-personajes #phoenix {
   background-color: rgba(128, 17, 197, 0.5);
-  border-radius: 1rem;
 }
-.personajes #ri {
+.mis-personajes #ri {
   background-color: rgba(184, 184, 195, 0.5);
-  border-radius: 1rem;
 }
-.personajes #thea {
+.mis-personajes #thea {
   background-color: rgba(214, 114, 254, 0.5);
-  border-radius: 1rem;
 }
-.personajes #usagi {
+.mis-personajes #usagi {
   background-color: rgba(114, 172, 254, 0.5);
-  border-radius: 1rem;
 }
-.personajes #vanelloppe {
+.mis-personajes #vanelloppe {
   background-color: rgba(254, 249, 114, 0.5);
-  border-radius: 1rem;
 }
-.personajes #zatch {
+.mis-personajes #zatch {
   background-color: rgba(255, 152, 197, 0.5);
-  border-radius: 1rem;
 }
 
-.ot-objetos {
-  display: flex;
-  width: 80vw;
-  height: 430px;
-}
-.ot-objetos div h2 {
-  font-family: "photograph";
-}
-.ot-objetos div div img {
-  width: 0px;
-  flex-grow: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 8;
-  transition: 1s ease;
-}
-.ot-objetos div div img:hover {
-  width: 300px;
-  opacity: 1;
-}
-
-.ot-personajes {
-  display: flex;
-  width: 80vw;
-  height: 530px;
-}
-.ot-personajes img {
-  width: 0px;
-  flex-grow: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 8;
-  transition: 1s ease;
-}
-.ot-personajes img:hover {
-  width: 300px;
-  opacity: 1;
-}
-
-.sipnosis img {
-  height: 50vh;
-  width: 85vw;
-  background-color: blueviolet;
-}
-
-.nav-entrenadores {
-  width: 20vw;
-  height: 10vh;
-  background-color: aqua;
-}
-
-.con-entrenadores {
-  font-size: 1.2rem;
-  margin-left: 0vw;
-  width: 97vw;
-}
-.con-entrenadores div div h2 {
+.otros-trabajos h2 {
   text-align: center;
+}
+.otros-trabajos .ot-galeria-img {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  max-width: 100vw;
+  margin: 0 0 0 auto;
+  margin-bottom: 5%;
+}
+.otros-trabajos .ot-galeria-img .ot-card {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid-column;
+  margin-bottom: 5%;
+  display: flex;
+}
+.otros-trabajos .ot-galeria-img .ot-card img {
+  width: 100%;
+  height: auto;
   display: block;
+  background-color: rgb(216, 216, 216);
+}
+
+.sipnosis {
+  width: 100%;
+  display: flexbox;
+  align-content: center;
+  justify-content: center;
+}
+.sipnosis img {
+  width: 70%;
+}
+
+.entrenadores {
+  width: 100%;
+}
+.entrenadores div {
+  width: 100%;
+}
+.entrenadores div .nav-entrenadores {
+  width: 100%;
+}
+.entrenadores div .nav-entrenadores ul {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.entrenadores div .nav-entrenadores ul li a {
+  padding-bottom: 0;
+}
+.entrenadores div .nav-entrenadores ul li a img {
+  width: 10vw;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.entrenadores div .con-entrenadores div div h2 {
+  text-align: center;
   font-family: "photograph";
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
-.con-entrenadores div div div {
-  display: inline-flex;
-  width: 80vw;
+.entrenadores div .con-entrenadores div div .con-img-txt {
+  display: flex;
 }
-.con-entrenadores div div div img {
-  display: inline-flex;
-  border-radius: 2rem;
-  width: 30vw;
-  height: 80vh;
-  background-color: aqua;
-}
-.con-entrenadores div div div div {
-  display: inline-flex;
-  padding: 2%;
-}
-.con-entrenadores div div div div .txt-entrenadores {
-  display: block;
-  padding: 1%;
+.entrenadores div .con-entrenadores div div .con-img-txt img {
+  width: 30%;
 }
 
 .puertas .puertas-a div a .img-contacto {
   width: 100%;
   background-color: aqua;
-  border-radius: 2rem;
+  border-radius: 25px;
 }
 .puertas .puertas-b {
   display: none;
@@ -460,13 +606,13 @@ body h1 {
   background-color: aqua;
   display: none;
   margin-bottom: 3%;
-  border-radius: 2rem;
+  border-radius: 25px;
 }
 
 .formulario {
   justify-content: center;
   width: 50vw;
-  border-radius: 2rem;
+  border-radius: 25px;
   margin: 3%;
   padding: 2%;
   font-size: 1rem;
@@ -490,6 +636,64 @@ body h1 {
   margin: 2%;
 }
 
+@media (max-width: 1024px) {
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+@media (max-width: 992px) {
+  .ult div {
+    width: 50vw;
+  }
+  .mis-personajes {
+    width: 95vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 60%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+    width: 100%;
+    display: inline-block;
+  }
+  .mis-personajes #charlie img {
+    height: 80%;
+  }
+  .sipnosis {
+    width: 100%;
+  }
+  .sipnosis img {
+    width: 100%;
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 15vw;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 40%;
+  }
+}
 @media (max-width: 768px) {
   .footer {
     display: flex;
@@ -503,64 +707,175 @@ body h1 {
   .footer div div .img-redes div a img {
     width: 100%;
   }
-  .sobre-mi div {
-    display: block;
+  .sob-enc .sobre-mi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
-  .sobre-mi div img {
-    width: 80%;
+  .sob-enc .sobre-mi div img {
+    width: 60%;
   }
-  .ult-enc {
-    flex-direction: column-reverse;
+  .ult div {
+    width: 90vw;
   }
-  .ult-enc .ult-publicaciones {
-    width: 100vw;
+  .mis-personajes {
+    width: 95vw;
   }
-  /* Ultimas publicaciones */
-  /* Personajes */
-  /* Navegacion */
-  .nav-hor {
+  .mis-personajes .personajes .nav-hor {
     display: none;
   }
-  .nav-ver {
+  .mis-personajes .personajes div .nav-ver {
+    width: 5%;
+    font-size: 0.8rem;
     display: inline-flex;
   }
-  /* Contenedor personajes */
-  .con-personajes {
-    width: 80vw;
-    display: block;
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 5%;
   }
-  .con-personajes div {
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 70%;
+    height: 50%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div .txt-personajes {
+    width: 100%;
     display: inline-block;
   }
-  .con-personajes img {
-    width: 80%;
+  .mis-personajes #charlie img {
+    height: 100%;
   }
-  #charlie img {
-    width: 90%;
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 2;
+         column-count: 2;
   }
-  /* Contacto */
-  /* Puertas */
-  .puertas-a img {
+  .sipnosis {
+    width: 100%;
+    display: flex;
+  }
+  .sipnosis img {
     width: 100%;
   }
-  /* formulario de comisiones */
-  .formulario {
+  .sipnosis div {
     width: 80%;
   }
-  /* grid */
-  /* personajes */
+  .entrenadores {
+    width: 100%;
+    height: 100%;
+  }
+  .entrenadores div {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .entrenadores div .nav-entrenadores {
+    height: 100%;
+    align-content: space-around;
+    border: 0;
+    border-right: 2px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    width: 20vw;
+    display: inline-flex;
+    margin-right: 0;
+    padding-right: 0;
+    border-color: rgb(163, 163, 163);
+  }
+  .entrenadores div .nav-entrenadores ul {
+    width: 100%;
+    margin: 0;
+  }
+  .entrenadores div .nav-entrenadores ul li a {
+    padding-bottom: 5%;
+    display: flex;
+    border: 3px;
+    border-top-right-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom: 2px;
+    padding-right: 0;
+    border-color: rgb(210, 210, 210);
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 30px;
+  }
+  .entrenadores div .con-entrenadores {
+    display: inline-flex;
+    border-left: 2px;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt {
+    display: block;
+    padding: 3%;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 55%;
+    height: 100%;
+    margin: 2%;
+  }
 }
 @media (max-width: 576px) {
-  /* Index */
-  /* Ultimas publicaciones,*/
-  .ult-enc {
-    flex-direction: column-reverse;
+  .sob-enc .sobre-mi {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .ult-enc .ult-publicaciones {
-    width: 100vw;
+  .sob-enc .sobre-mi div img {
+    width: 90%;
   }
-  /* encuesta */
-  .puertas-a img {
+  .ult div {
+    width: 90vw;
+  }
+  .mis-personajes {
+    width: 90vw;
+  }
+  .mis-personajes .personajes .nav-hor {
+    display: none;
+  }
+  .mis-personajes .personajes div .nav-ver {
+    width: 3%;
+    font-size: 0.8rem;
+    display: inline-flex;
+  }
+  .mis-personajes .personajes .personajes-con {
+    margin-left: 10%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes h2 {
+    font-family: "photograph";
+    text-align: center;
+    font-size: 50px;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div {
+    display: inline-block;
+    padding: 3%;
+  }
+  .mis-personajes .personajes .personajes-con div .con-personajes div img {
+    border-radius: 25px;
+    width: 100%;
+    height: 50%;
+  }
+  .mis-personajes #charlie img {
+    height: 100%;
+  }
+  .otros-trabajos .ot-galeria-img {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  .puertas-b {
+    display: block;
+  }
+  .puertas-b img {
     width: 80vw;
   }
   /* Formulario de comisiones */
@@ -569,9 +884,17 @@ body h1 {
     padding: 6%;
   }
 }
-@media (max-width: 575px) {
-  /* Index */
-  /* Encuesta */
+@media (min-width: 575px) {
+  .footer {
+    display: flex;
+    background-color: none;
+  }
+  .footer div {
+    display: inline-flex;
+  }
+  .footer div div .img-redes div a img {
+    width: 100%;
+  }
   /* Contacto */
   /* Puertas */
   .puertas-a img {
@@ -593,8 +916,9 @@ body h1 {
   .encuesta {
     display: inline;
     flex-direction: column;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%;
   }
   /* Contacto */
   /* Puertas */
