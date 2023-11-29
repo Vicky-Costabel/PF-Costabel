@@ -7,12 +7,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- mi estilo -->
   <link rel="stylesheet" href="../css/style.css">
   <title>Torneo de Leyendas</title>
   <link rel="shortcut icon" href="../img/mini-comisiones.png" type="image/x-icon">
 </head>
-<body>
+<body class=" container animate__animated animate__fadeIn">
   <header class="container">
     <!-- Logo -->
       <div>
@@ -40,100 +44,70 @@
       </nav>
   </header>
 
-  <main class="container justify-content-center">
+  <main class="container">
     <!-- Titulo -->
     <div>
       <h1>Torneo de Leyendas</h1>
     </div>
     <!-- /Titulo -->
     <!-- Sipnosis -->
-    <section class="sipnosis ">
-      <img src="../img/img-prueba.png" alt="Logo Torneo de leyendas" class="" >
+    <section class="sipnosis row">
+      <img src="../img/torneo-logo.png" alt="Logo Torneo de leyendas" class="" >
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat veritatis consequatur eligendi voluptate ipsam minima, quaerat quibusdam veniam dolorem inventore quae vero excepturi, vitae aliquid animi corporis harum iusto.
-        Ducimus laboriosam nesciunt dolore. Nostrum aliquid aspernatur vero perferendis vel sunt eveniet nesciunt recusandae voluptates soluta culpa tempore velit dolore, officiis incidunt ducimus cupiditate voluptatem. Totam quia ratione repudiandae dignissimos.
-        Architecto voluptas vel iure, facere voluptatum voluptates consequatur sunt nesciunt doloribus vitae est nihil eum vero aspernatur obcaecati quae quasi at veritatis nulla libero molestias modi eveniet aperiam? Id, vero.
-        Totam vel, sit accusantium obcaecati veritatis fugit cumque voluptatum molestiae odio, aliquid, maiores illo voluptatem perspiciatis vitae earum placeat dolorem culpa cum sunt doloremque. Iste rem magnam corporis fugit cupiditate.
-        Soluta neque eligendi maxime assumenda, quidem impedit pariatur obcaecati eaque officia nulla porro, similique distinctio esse consequatur hic est veritatis. Consequuntur nemo odit quae placeat delectus. Rem voluptatem expedita placeat.
-        Pariatur, reprehenderit veniam quasi iste asperiores architecto ratione quos, officiis ut quae itaque? Maxime odit quidem exercitationem eius eligendi dolorem reprehenderit voluptas autem porro. Et obcaecati delectus commodi nobis dolor!
-        Neque fuga dolores unde amet, tempora, natus quia dolorem ratione saepe consectetur, hic aliquid ad doloremque! Laborum maxime exercitationem voluptate velit non ad error quisquam, incidunt, libero saepe voluptates architecto.</p>
+        <p>El Torneo de Leyendas es el evento más esperado por todos aquellos que aspiran a ser maestros Pokémon. Entrenadores de todo el país se reúnen para recorrer los gimnasios, explorar la región y demostrar ser los mejores. Es un camino largo, repleto de peligros y combates, donde debes crecer, entrenar y conquistar el título. No todos lo logran, no todos salen ilesos, pero es precisamente por eso que si lo alcanzas, te has ganado con creces el título de 'Campeón'</p>
       </div>
     </section>
     <!-- /Sipnosis -->
     <!-- Entrenadores -->
-    <section class="entrenadores">
+    <section class="entrenadores  row">
       <div class="card">
-        <div class="card-header d-flex justify-content-center">
-          <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-            <div class="row">
-              <li class="nav-item col-4" role="presentation">
-                <a class="nav-link" id="home-tab" data-bs-toggle="tab" href="#jessie" role="tab" aria-controls="home" aria-selected="true">
-                  <img src="../img/img-prueba.png" alt="" class="nav-entrenadores">
+        <div class="card-header nav-entrenadores ">
+          <ul class="nav nav-tabs card-header-tabs " id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#jessie" role="tab" aria-controls="home" aria-selected="true">
+                  <img src="../img/jessie-ojos.png" alt="" class="Ojo Jessie">
                 </a>
               </li>
-              <li class="nav-item col-4" role="presentation">
+              <li class="nav-item" role="presentation">
                 <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#rein" role="tab" aria-controls="profile" aria-selected="false">
-                  <img src="../img/img-prueba.png" alt="" class="nav-entrenadores">
+                  <img src="../img/rein-ojos.png" alt="" class="Ojos Rein">
                 </a>
               </li>
-              <li class="nav-item col-4" role="presentation">
-                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#kai" role="tab" aria-controls="profile" aria-selected="false">
-                  <img src="../img/img-prueba.png" alt="" class="nav-entrenadores">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#eris" role="tab" aria-controls="profile" aria-selected="false">
+                  <img src="../img/eris-ojos.png" alt="" class="Ojos Eris">
                 </a>
               </li>
-            </div>
+
           </ul>
         </div>
-        <div class="card-body">
-          <div class="tab-content con-entrenadores" id="myTabContent">
-            <div class="tab-pane fade show" id="jessie" role="tabpanel" aria-labelledby="home-tab">
-              <div>
-                <h2>Jessie Willowgasth</h2>
-                <div>
-                  <img src="../img/img-prueba.png" alt="ojo-entrenadores">
-                  <div class="txt-entrenadores">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas, et dignissimos consequatur tempora saepe dolore quisquam sed magnam aspernatur est nihil! Ipsam illo officia error debitis, sint fuga alias?
-                    Iusto doloribus eos ipsum ad explicabo maxime quo cumque perferendis nihil facere, error officiis dignissimos adipisci, asperiores ipsa illo dolores aperiam natus beatae ea laboriosam hic alias? Amet, maxime quaerat!
-                    Earum natus odit amet ex animi pariatur, error accusantium alias! Iure sed, ut aliquam perspiciatis cum commodi dicta eaque consectetur inventore quibusdam rerum, delectus numquam. Recusandae rem voluptatem magnam incidunt.
-                    Sapiente totam itaque facere ipsa enim ipsam quasi in dolor voluptate nostrum ratione minima molestias provident alias cumque deleniti vel mollitia, quod, nisi, aliquam sint magni. Sit, aperiam aut. Dicta!
-                    Ipsam quia at molestiae et. Enim, ad tenetur. Doloribus ut voluptate doloremque eaque quo recusandae tempore, quae sapiente quidem illum facere, vel aspernatur maiores ea cum atque vero sed natus!
-                    Consectetur tenetur voluptates ea placeat saepe nemo quisquam et aspernatur rerum labore iure rem sint, ab assumenda qui harum veniam in aut asperiores quas odit? Libero quos id cumque consectetur!
-                    Magni saepe quaerat vitae aliquam tenetur pariatur voluptatum atque adipisci laborum aperiam labore rerum, libero laudantium iusto nam iure ipsum non odit exercitationem corrupti sunt. Eos soluta harum sequi veritatis!</p>
-                  </div>
+        <div class="card-body con-entrenadores">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="jessie" role="tabpanel" aria-labelledby="home-tab">
+              <h2>Jessie Willowgasth</h2>
+              <div class="con-img-txt">
+                <img src="../img/jessie.png" alt="Entrenadora esoterica Jessie Willowgasth">
+                <div class="txt-entrenadores">
+                  <p>Originaria de la actual ciudad en crecimiento, Ciudad Lavanda, ella no es solo la segunda hija de una de las familias más adineradas de la ciudad, sino que es conocida como la 'rara de Lavanda'. Parece poseer la habilidad de percibir lo que los demás no ven, escuchar voces que nadie más puede y, sobre todo, comprender a aquellos Pokémon que nadie tiene el valor de acercarse a entender.
+                  Ella no aspira a convertirse en campeona, ni busca fama ni fortuna. Ella está en búsqueda, busca a alguien específico, alguien que desapareció en algún punto del recorrido por los gimnasios...</p>
                 </div>
               </div>
             </div>
             <div class="tab-pane fade show" id="rein" role="tabpanel" aria-labelledby="home-tab">
-              <div>
-                <h2>Rein Jäger</h2>
-                <div>
-                  <img src="../img/img-prueba.png" alt="ojo-entrenadores">
-                  <div class="txt-entrenadores">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas, et dignissimos consequatur tempora saepe dolore quisquam sed magnam aspernatur est nihil! Ipsam illo officia error debitis, sint fuga alias?
-                    Iusto doloribus eos ipsum ad explicabo maxime quo cumque perferendis nihil facere, error officiis dignissimos adipisci, asperiores ipsa illo dolores aperiam natus beatae ea laboriosam hic alias? Amet, maxime quaerat!
-                    Earum natus odit amet ex animi pariatur, error accusantium alias! Iure sed, ut aliquam perspiciatis cum commodi dicta eaque consectetur inventore quibusdam rerum, delectus numquam. Recusandae rem voluptatem magnam incidunt.
-                    Sapiente totam itaque facere ipsa enim ipsam quasi in dolor voluptate nostrum ratione minima molestias provident alias cumque deleniti vel mollitia, quod, nisi, aliquam sint magni. Sit, aperiam aut. Dicta!
-                    Ipsam quia at molestiae et. Enim, ad tenetur. Doloribus ut voluptate doloremque eaque quo recusandae tempore, quae sapiente quidem illum facere, vel aspernatur maiores ea cum atque vero sed natus!
-                    Consectetur tenetur voluptates ea placeat saepe nemo quisquam et aspernatur rerum labore iure rem sint, ab assumenda qui harum veniam in aut asperiores quas odit? Libero quos id cumque consectetur!
-                    Magni saepe quaerat vitae aliquam tenetur pariatur voluptatum atque adipisci laborum aperiam labore rerum, libero laudantium iusto nam iure ipsum non odit exercitationem corrupti sunt. Eos soluta harum sequi veritatis!</p>
-                  </div>
+              <h2>Rein Jäger</h2>
+              <div class="con-img-txt">
+                <img src="../img/rein.png" alt="Entrenador tenebroso Rein Jaguer">
+                <div class="txt-entrenadores">
+                  <p>"Encuéntrame en Kanto, sabrás que estoy cerca cuando encuentres algo que sea mío. N." Esa fue la carta que recibió aquella mañana, y no necesitó más para dejar todo atrás y dirigirse a Kanto. No sabe dónde está, ni por qué se encuentra aquí, pero está dispuesta a recorrer los desafiantes gimnasios si eso significa encontrarlo.</p>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade show" id="kai" role="tabpanel" aria-labelledby="home-tab">
-              <div>
-                <h2>Kai Taris</h2>
-                <div>
-                  <img src="../img/img-prueba.png" alt="ojo-entrenadores">
-                  <div class="txt-entrenadores">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas, et dignissimos consequatur tempora saepe dolore quisquam sed magnam aspernatur est nihil! Ipsam illo officia error debitis, sint fuga alias?
-                    Iusto doloribus eos ipsum ad explicabo maxime quo cumque perferendis nihil facere, error officiis dignissimos adipisci, asperiores ipsa illo dolores aperiam natus beatae ea laboriosam hic alias? Amet, maxime quaerat!
-                    Earum natus odit amet ex animi pariatur, error accusantium alias! Iure sed, ut aliquam perspiciatis cum commodi dicta eaque consectetur inventore quibusdam rerum, delectus numquam. Recusandae rem voluptatem magnam incidunt.
-                    Sapiente totam itaque facere ipsa enim ipsam quasi in dolor voluptate nostrum ratione minima molestias provident alias cumque deleniti vel mollitia, quod, nisi, aliquam sint magni. Sit, aperiam aut. Dicta!
-                    Ipsam quia at molestiae et. Enim, ad tenetur. Doloribus ut voluptate doloremque eaque quo recusandae tempore, quae sapiente quidem illum facere, vel aspernatur maiores ea cum atque vero sed natus!
-                    Consectetur tenetur voluptates ea placeat saepe nemo quisquam et aspernatur rerum labore iure rem sint, ab assumenda qui harum veniam in aut asperiores quas odit? Libero quos id cumque consectetur!
-                    Magni saepe quaerat vitae aliquam tenetur pariatur voluptatum atque adipisci laborum aperiam labore rerum, libero laudantium iusto nam iure ipsum non odit exercitationem corrupti sunt. Eos soluta harum sequi veritatis!</p>
-                  </div>
+            <div class="tab-pane fade show" id="eris" role="tabpanel" aria-labelledby="home-tab">
+              <h2>Eris Payne</h2>
+              <div class="con-img-txt">
+                <img src="../img/eris.png" alt="Entrenadora Maldita Eris Payne">
+                <div class="txt-entrenadores">
+                  <p>Su pasado está envuelto en llamas, y desconoce el motivo. Cada intento por recordar desencadena un intenso dolor de cabeza; cada sueño relacionado muestra un rostro que sabe que debería reconocer, pero la memoria se le escapa. Anhela descubrir su identidad, desentrañar lo sucedido, y está convencida de que en el transcurso de su viaje encontrará respuestas.</p>
                 </div>
               </div>
             </div>
@@ -141,35 +115,96 @@
         </div>
       </div>
     </section>
+    <!-- /Entrenadores -->
   </main>
-  <footer class="footer container-fluid position-relative m-auto">
+
+  <footer class="footer container-fluid row">
     <div class="row">
-      <nav class="nav">
-        <a class="nav-link col-2 d-flex " aria-current="page" href="#sobre-mi">¿Quien soy?</a>
-        <a class="nav-link col-2 d-flex " href="../paginas/personajes.html">Mis dibujos personales</a>
-        <a class="nav-link col-2" href="../paginas/otros.html">Mis trabajos</a>
-        <a class="nav-link col-1 d-flex " href="#comisiones">Comisiones</a>
-        <div class="col-1">
-          <ul class="d-flex flex-column">
-            <li>
-              <a href="https://www.youtube.com/@freyacleripson8237"><i class='bx bxl-youtube' ></i></a>    
-            </li>
-            <li>
-              <a href="https://www.discordapp.com/users/372849037885308931"><i class='bx bxl-discord-alt'></i></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/freya_cleripson/"><i class='bx bxl-instagram-alt' ></i></a>
-            </li>
-          </ul>
+        <!-- Imagen Footer, Mis redes-->
+        <div class="col-xxl col-xl col-lg col-md col-sm-6 col-6">
+            <section class="img-redes">
+                <div>
+                    <a href="index.html">
+                        <img src="../img/inicio.png" alt="Logo inicio">
+                    </a>
+                </div>
+                <h3 class="fw-bold">Mis redes Sociales</h3>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/@freyacleripson8237" target="_blank">
+                                <i class='bx bxl-youtube fw-bold'></i>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.discordapp.com/users/372849037885308931" target="_blank">
+                                <i class='bx bxl-discord-alt fw-bold' ></i>
+                            </a>     
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/freya_cleripson/" target="_blank">
+                                <i class='bx bxl-instagram-alt fw-bold' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div> 
+        <!-- /Imagen footer, Mis Redes-->
+        <!-- Pincipal, Personajes -->
+        <div class="prin-pers col-xxl col-xl col-lg col-md col-sm-6 col-6">
+            <!-- Principal -->
+            <section class="principal">
+                <h3 class="fw-bold">Principal</h3>
+                <div>
+                    <a href="#sobre-mi">¿Quien soy?</a>
+                    <a href="#encuesta">Mis proximos trabajos</a>
+                    <a href="#ult-publicaciones">Mis ultimos trabajos</a>
+                </div>
+            </section>
+            <!-- /Principal -->
+            <!-- Personajes -->
+            <section class="pers-footer">
+                <h3 class="fw-bold">Personajes</h3>
+                <a href="../paginas/personajes.html">Mis personajes</a>  
+            </section>
+            <!-- /Personajes -->
         </div>
-        <div class="col-4">
-          <img src="../img/inicio.png" alt="">
+        <!-- /Pincipal, Personajes -->
+        <!-- Otros trabajos -->
+        <div class="ot-footer col-xxl col-xl col-lg col-md col-sm-6 col-6">
+            <Section>
+                <h3 class="fw-bold">Mis otros trabajos</h3>
+                <div>
+                    <a href="#ot-trabajos">Otros Tabajos</a>
+                </div>
+            </Section>
         </div>
-      </nav>      
-    </div> 
-  </footer>
+        <!-- /Otros trabajos -->
+        <!-- Comisiones -->
+        <div class="com-footer col-xxl col-xl col-lg col-md col-sm-6 col-6">
+            <section>
+                <h3 class="fw-bold">Soliciotud de Comisiones</h3>
+                <a href="#comisiones"> Comisiones</a>
+            </section>
+        </div>
+        <!-- /Comisiones -->
+    </div>
+
+</footer>
+<!-- Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Bootstrap -->
+<script src="/js/bootstrap.js"></script>
+<!-- Popper -->
+<script src="/js/popper.js"></script>
   
 </body>
-<script src="../js/bootstrap.js"></script>
-<script src="../js/popper.js"></script>
+
 </html>

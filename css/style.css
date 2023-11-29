@@ -13,6 +13,9 @@
   }
 }
 @media (max-width: 992px) {
+  .ult div {
+    width: 50vw;
+  }
   .mis-personajes {
     width: 95vw;
   }
@@ -48,6 +51,18 @@
   .mis-personajes #charlie img {
     height: 80%;
   }
+  .sipnosis {
+    width: 100%;
+  }
+  .sipnosis img {
+    width: 100%;
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 15vw;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 40%;
+  }
 }
 @media (max-width: 768px) {
   .footer {
@@ -70,9 +85,8 @@
   .sob-enc .sobre-mi div img {
     width: 60%;
   }
-  .ult .ult-pub-slider .ult-pub-galeria {
-    width: 100vw;
-    height: 50vh;
+  .ult div {
+    width: 90vw;
   }
   .mis-personajes {
     width: 95vw;
@@ -113,20 +127,73 @@
     -moz-column-count: 2;
          column-count: 2;
   }
+  .sipnosis {
+    width: 100%;
+    display: flex;
+  }
+  .sipnosis img {
+    width: 100%;
+  }
+  .sipnosis div {
+    width: 80%;
+  }
+  .entrenadores {
+    width: 100%;
+    height: 100%;
+  }
+  .entrenadores div {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .entrenadores div .nav-entrenadores {
+    height: 100%;
+    align-content: space-around;
+    border: 0;
+    border-right: 2px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    width: 20vw;
+    display: inline-flex;
+    margin-right: 0;
+    padding-right: 0;
+    border-color: rgb(163, 163, 163);
+  }
+  .entrenadores div .nav-entrenadores ul {
+    width: 100%;
+    margin: 0;
+  }
+  .entrenadores div .nav-entrenadores ul li a {
+    padding-bottom: 5%;
+    display: flex;
+    border: 3px;
+    border-top-right-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom: 2px;
+    padding-right: 0;
+    border-color: rgb(210, 210, 210);
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 30px;
+  }
+  .entrenadores div .con-entrenadores {
+    display: inline-flex;
+    border-left: 2px;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt {
+    display: block;
+    padding: 3%;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 55%;
+    height: 100%;
+    margin: 2%;
+  }
 }
-/* Contacto */
-/* Puertas */
-.puertas-a img {
-  width: 100%;
-}
-
-/* formulario de comisiones */
-.formulario {
-  width: 80%;
-}
-
-/* grid */
-/* personajes */
 @media (max-width: 576px) {
   .sob-enc .sobre-mi {
     display: inline-block;
@@ -137,9 +204,8 @@
   .sob-enc .sobre-mi div img {
     width: 90%;
   }
-  .ult .ult-pub-slider .ult-pub-galeria {
-    width: 120vw;
-    height: 60vh;
+  .ult div {
+    width: 90vw;
   }
   .mis-personajes {
     width: 90vw;
@@ -188,11 +254,10 @@
     padding: 6%;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 575px) {
   .footer {
     display: flex;
     background-color: none;
-    margin: 0px;
   }
   .footer div {
     display: inline-flex;
@@ -200,22 +265,6 @@
   .footer div div .img-redes div a img {
     width: 100%;
   }
-  .ult .ult-pub-slider .ult-pub-galeria {
-    width: 100vw;
-    height: 100vh;
-    margin: 10% 0 0;
-    align-items: none;
-    justify-content: none;
-  }
-  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor {
-    justify-content: none;
-    align-items: none;
-  }
-  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img {
-    right: 5%;
-  }
-  /* Index */
-  /* Encuesta */
   /* Contacto */
   /* Puertas */
   .puertas-a img {
@@ -237,8 +286,9 @@
   .encuesta {
     display: inline;
     flex-direction: column;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%;
   }
   /* Contacto */
   /* Puertas */
@@ -359,7 +409,6 @@ body h1 {
   padding: 2%;
 }
 .sob-enc .sobre-mi div img {
-  background-color: aqua;
   border-radius: 25px;
 }
 .sob-enc .sobre-mi div div {
@@ -369,121 +418,27 @@ body h1 {
   display-padding: 1%;
 }
 
-.ult {
-  height: 100vh;
-}
 .ult h2 {
   text-align: center;
   display: block;
 }
-.ult .ult-pub-slider {
-  max-width: 90vw;
-  max-height: 100vh;
-}
-.ult .ult-pub-slider .ult-pub-galeria {
-  width: 50vw;
-  height: 50vh;
-  margin: auto;
-  display: flex;
-  align-items: center;
+.ult div {
+  width: 40vw;
   justify-content: center;
 }
-.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor {
+.ult div div {
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor input[type=radio] {
-  display: none;
+.ult div div div {
+  width: 90%;
 }
-.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.ult div div div img {
+  width: 90%;
+  height: 80%;
 }
-.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img .card {
-  position: absolute;
-  width: 60%;
-  height: auto;
-  left: 0;
-  right: 0;
-  margin: auto;
-  cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-  background-color: rgb(255, 255, 255);
-}
-.ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img .card img {
-  height: 100%;
-  border-radius: 25px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.ult #item-1:checked ~ .ult-pub-con-img #selector-18,
-.ult #item-2:checked ~ .ult-pub-con-img #selector-1,
-.ult #item-3:checked ~ .ult-pub-con-img #selector-2,
-.ult #item-4:checked ~ .ult-pub-con-img #selector-3,
-.ult #item-5:checked ~ .ult-pub-con-img #selector-4,
-.ult #item-6:checked ~ .ult-pub-con-img #selector-5,
-.ult #item-7:checked ~ .ult-pub-con-img #selector-6,
-.ult #item-8:checked ~ .ult-pub-con-img #selector-7,
-.ult #item-9:checked ~ .ult-pub-con-img #selector-8,
-.ult #item-10:checked ~ .ult-pub-con-img #selector-9,
-.ult #item-11:checked ~ .ult-pub-con-img #selector-10,
-.ult #item-12:checked ~ .ult-pub-con-img #selector-11,
-.ult #item-13:checked ~ .ult-pub-con-img #selector-12,
-.ult #item-14:checked ~ .ult-pub-con-img #selector-13,
-.ult #item-15:checked ~ .ult-pub-con-img #selector-14,
-.ult #item-16:checked ~ .ult-pub-con-img #selector-15,
-.ult #item-17:checked ~ .ult-pub-con-img #selector-16,
-.ult #item-18:checked ~ .ult-pub-con-img #selector-17 {
-  transform: translateX(-40%) scale(0.8);
-  opacity: 0.6;
-  z-index: 0;
-}
-.ult #item-1:checked ~ .ult-pub-con-img #selector-2,
-.ult #item-2:checked ~ .ult-pub-con-img #selector-3,
-.ult #item-3:checked ~ .ult-pub-con-img #selector-4,
-.ult #item-4:checked ~ .ult-pub-con-img #selector-5,
-.ult #item-5:checked ~ .ult-pub-con-img #selector-6,
-.ult #item-6:checked ~ .ult-pub-con-img #selector-7,
-.ult #item-7:checked ~ .ult-pub-con-img #selector-8,
-.ult #item-8:checked ~ .ult-pub-con-img #selector-9,
-.ult #item-9:checked ~ .ult-pub-con-img #selector-10,
-.ult #item-10:checked ~ .ult-pub-con-img #selector-11,
-.ult #item-11:checked ~ .ult-pub-con-img #selector-12,
-.ult #item-12:checked ~ .ult-pub-con-img #selector-13,
-.ult #item-13:checked ~ .ult-pub-con-img #selector-14,
-.ult #item-14:checked ~ .ult-pub-con-img #selector-15,
-.ult #item-15:checked ~ .ult-pub-con-img #selector-16,
-.ult #item-16:checked ~ .ult-pub-con-img #selector-17,
-.ult #item-17:checked ~ .ult-pub-con-img #selector-18,
-.ult #item-18:checked ~ .ult-pub-con-img #selector-1 {
-  transform: translateX(40%) scale(0.8);
-  opacity: 0.6;
-  z-index: 0;
-}
-.ult #item-1:checked ~ .ult-pub-con-img #selector-1,
-.ult #item-2:checked ~ .ult-pub-con-img #selector-2,
-.ult #item-3:checked ~ .ult-pub-con-img #selector-3,
-.ult #item-4:checked ~ .ult-pub-con-img #selector-4,
-.ult #item-5:checked ~ .ult-pub-con-img #selector-5,
-.ult #item-6:checked ~ .ult-pub-con-img #selector-6,
-.ult #item-7:checked ~ .ult-pub-con-img #selector-7,
-.ult #item-8:checked ~ .ult-pub-con-img #selector-8,
-.ult #item-9:checked ~ .ult-pub-con-img #selector-9,
-.ult #item-10:checked ~ .ult-pub-con-img #selector-10,
-.ult #item-11:checked ~ .ult-pub-con-img #selector-11,
-.ult #item-12:checked ~ .ult-pub-con-img #selector-12,
-.ult #item-13:checked ~ .ult-pub-con-img #selector-13,
-.ult #item-14:checked ~ .ult-pub-con-img #selector-14,
-.ult #item-15:checked ~ .ult-pub-con-img #selector-15,
-.ult #item-16:checked ~ .ult-pub-con-img #selector-16,
-.ult #item-17:checked ~ .ult-pub-con-img #selector-17,
-.ult #item-18:checked ~ .ult-pub-con-img #selector-18 {
-  transform: translateX(0) scale(1);
-  z-index: 2;
+.ult a span {
+  background-color: black;
+  border-radius: 30%;
 }
 
 .mis-personajes {
@@ -593,47 +548,48 @@ body h1 {
   background-color: rgb(216, 216, 216);
 }
 
+.sipnosis {
+  width: 100%;
+  display: flexbox;
+  align-content: center;
+  justify-content: center;
+}
 .sipnosis img {
-  height: 50vh;
-  width: 85vw;
-  background-color: blueviolet;
+  width: 70%;
 }
 
-.nav-entrenadores {
-  width: 20vw;
-  height: 10vh;
-  background-color: aqua;
+.entrenadores {
+  width: 100%;
 }
-
-.con-entrenadores {
-  font-size: 1.2rem;
-  margin-left: 0vw;
-  width: 97vw;
+.entrenadores div {
+  width: 100%;
 }
-.con-entrenadores div div h2 {
+.entrenadores div .nav-entrenadores {
+  width: 100%;
+}
+.entrenadores div .nav-entrenadores ul {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.entrenadores div .nav-entrenadores ul li a {
+  padding-bottom: 0;
+}
+.entrenadores div .nav-entrenadores ul li a img {
+  width: 10vw;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.entrenadores div .con-entrenadores div div h2 {
   text-align: center;
-  display: block;
   font-family: "photograph";
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
-.con-entrenadores div div div {
-  display: inline-flex;
-  width: 80vw;
+.entrenadores div .con-entrenadores div div .con-img-txt {
+  display: flex;
 }
-.con-entrenadores div div div img {
-  display: inline-flex;
-  border-radius: 2rem;
-  width: 30vw;
-  height: 80vh;
-  background-color: aqua;
-}
-.con-entrenadores div div div div {
-  display: inline-flex;
-  padding: 2%;
-}
-.con-entrenadores div div div div .txt-entrenadores {
-  display: block;
-  padding: 1%;
+.entrenadores div .con-entrenadores div div .con-img-txt img {
+  width: 30%;
 }
 
 .puertas .puertas-a div a .img-contacto {
@@ -687,6 +643,9 @@ body h1 {
   }
 }
 @media (max-width: 992px) {
+  .ult div {
+    width: 50vw;
+  }
   .mis-personajes {
     width: 95vw;
   }
@@ -722,6 +681,18 @@ body h1 {
   .mis-personajes #charlie img {
     height: 80%;
   }
+  .sipnosis {
+    width: 100%;
+  }
+  .sipnosis img {
+    width: 100%;
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 15vw;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 40%;
+  }
 }
 @media (max-width: 768px) {
   .footer {
@@ -744,9 +715,8 @@ body h1 {
   .sob-enc .sobre-mi div img {
     width: 60%;
   }
-  .ult .ult-pub-slider .ult-pub-galeria {
-    width: 100vw;
-    height: 50vh;
+  .ult div {
+    width: 90vw;
   }
   .mis-personajes {
     width: 95vw;
@@ -787,20 +757,73 @@ body h1 {
     -moz-column-count: 2;
          column-count: 2;
   }
+  .sipnosis {
+    width: 100%;
+    display: flex;
+  }
+  .sipnosis img {
+    width: 100%;
+  }
+  .sipnosis div {
+    width: 80%;
+  }
+  .entrenadores {
+    width: 100%;
+    height: 100%;
+  }
+  .entrenadores div {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .entrenadores div .nav-entrenadores {
+    height: 100%;
+    align-content: space-around;
+    border: 0;
+    border-right: 2px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+    width: 20vw;
+    display: inline-flex;
+    margin-right: 0;
+    padding-right: 0;
+    border-color: rgb(163, 163, 163);
+  }
+  .entrenadores div .nav-entrenadores ul {
+    width: 100%;
+    margin: 0;
+  }
+  .entrenadores div .nav-entrenadores ul li a {
+    padding-bottom: 5%;
+    display: flex;
+    border: 3px;
+    border-top-right-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom: 2px;
+    padding-right: 0;
+    border-color: rgb(210, 210, 210);
+  }
+  .entrenadores div .nav-entrenadores ul li a img {
+    width: 100%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 30px;
+  }
+  .entrenadores div .con-entrenadores {
+    display: inline-flex;
+    border-left: 2px;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt {
+    display: block;
+    padding: 3%;
+  }
+  .entrenadores div .con-entrenadores div div .con-img-txt img {
+    width: 55%;
+    height: 100%;
+    margin: 2%;
+  }
 }
-/* Contacto */
-/* Puertas */
-.puertas-a img {
-  width: 100%;
-}
-
-/* formulario de comisiones */
-.formulario {
-  width: 80%;
-}
-
-/* grid */
-/* personajes */
 @media (max-width: 576px) {
   .sob-enc .sobre-mi {
     display: inline-block;
@@ -811,9 +834,8 @@ body h1 {
   .sob-enc .sobre-mi div img {
     width: 90%;
   }
-  .ult .ult-pub-slider .ult-pub-galeria {
-    width: 120vw;
-    height: 60vh;
+  .ult div {
+    width: 90vw;
   }
   .mis-personajes {
     width: 90vw;
@@ -862,11 +884,10 @@ body h1 {
     padding: 6%;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 575px) {
   .footer {
     display: flex;
     background-color: none;
-    margin: 0px;
   }
   .footer div {
     display: inline-flex;
@@ -874,22 +895,6 @@ body h1 {
   .footer div div .img-redes div a img {
     width: 100%;
   }
-  .ult .ult-pub-slider .ult-pub-galeria {
-    width: 100vw;
-    height: 100vh;
-    margin: 10% 0 0;
-    align-items: none;
-    justify-content: none;
-  }
-  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor {
-    justify-content: none;
-    align-items: none;
-  }
-  .ult .ult-pub-slider .ult-pub-galeria .ult-pub-contenedor .ult-pub-con-img {
-    right: 5%;
-  }
-  /* Index */
-  /* Encuesta */
   /* Contacto */
   /* Puertas */
   .puertas-a img {
@@ -911,8 +916,9 @@ body h1 {
   .encuesta {
     display: inline;
     flex-direction: column;
-    width: 100vw;
-    height: 60vh;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%;
   }
   /* Contacto */
   /* Puertas */
