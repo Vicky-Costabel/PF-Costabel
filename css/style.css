@@ -639,6 +639,33 @@ body h1 {
   display: none;
 }
 
+.error {
+  background-color: black;
+}
+
+.error-page {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.error-page h1 {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+}
+.error-page a {
+  display: block;
+  align-items: center;
+  justify-items: center;
+  font-size: 2rem;
+}
+
 @media (max-width: 1024px) {
   .otros-trabajos .ot-galeria-img {
     -moz-column-count: 3;

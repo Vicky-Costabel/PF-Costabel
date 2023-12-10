@@ -388,4 +388,31 @@ body{
 }
 // Formulario de Comisiones
 
+.error{
+    background-color: black;
+}
+
+.error-page{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+        justify-items: center;
+    h1{
+        display: block;
+        align-items: center;
+        justify-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 5rem;
+        color: rgb(255, 255, 255)
+    }
+    a{
+        display:block;
+        align-items: center;
+        justify-items: center;
+        font-size: 2rem
+    }
+}
+
 @import "./partials/queries";
